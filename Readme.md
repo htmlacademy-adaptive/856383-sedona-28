@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Игорь Федосеев](https://up.htmlacademy.ru/adaptive/28/user/856383).
-* Наставник: `Артур Трифонов https://htmlacademy.ru/profile/wrgraff`.
+* Наставник: [Артур Трифонов] (https://htmlacademy.ru/profile/wrgraff).
 
 ---
 
