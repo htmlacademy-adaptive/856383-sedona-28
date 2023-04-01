@@ -41,101 +41,97 @@
   </header>
   <main class="main-container">
     <section class="welcome-block">
-      <h1 class="visually-hidden">Добро пожаловатьв седону</h1>
+      <h1 class="visually-hidden">Седона</h1>
       <img class="sedona-image" src="#" width="0" height="0" alt="#">
     </section>
-    <section>
-      <h2>Оставьте свой отзыв</h2>
-      <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    </section>
-    <section>
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="get">
+    <section class="feedback">
+      <header class="feedback-header">
+        <h2 class="feedback-header__title">Оставьте свой отзыв</h2>
+        <p class="feedback-header__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+          достопримечательностях</p>
+      </header>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="feedback-form__group">
+          <legend class="feedback-form__title">Представьтесь:</legend>
+          <p class="feedback-form__wrapper-name">
+            <label class="feedback-form__label" for="visitors-name">ИМЯ*:</label>
+            <input class="feedback-form__input" type="text" id="visitors-name" name="visitors-name" placeholder="Пётр">
+          </p>
+          <p class="feedback-form__surname">
+            <label class="feedback-form__label" for="visitors-surname">ФАМИЛИЯ*:</label>
+            <input class="feedback-form__input" type="text" id="visitors-surname" name="visitors-surname" placeholder="Пустота">
+          </p>
+          <p class="feedback-form__patronymic">
+            <label class="feedback-form__label" for="visitors-patronymic">ОТЧЕСТВО:</label>
+            <input class="feedback-form__input" type="text" id="visitors-patronymic" name="visitors-patronymic" placeholder="Викторович">
+          </p>
+        </fieldset>
 
-        <fieldset>
-          <legend>Представьтесь:</legend>
-          <ul>
-            <li>
-              <p>
-                <label for="visitors-name">ИМЯ*:</label>
-                <input type="text" id="visitors-name" name="visitors-name" placeholder="Пётр">
-              </p>
+        <fieldset class="feedback-form__group">
+          <legend class="feedback-form__title">Контактная информация:</legend>
+          <p class="feedback-form__phone">
+            <label class="feedback-form__label" for="contact-phone">Контактный телефон*:</label>
+            <input class="feedback-form__input" type="tel" id="contact-phone" name="contact-phone" placeholder="Введите телефон">
+          </p>
+          <p class="feedback-form__email">
+            <label class="feedback-form__label" for="email">Электронная почта*:</label>
+            <input class="feedback-form__input" type="email" id="email" name="email" placeholder="Введите e-mail">
+          </p>
+        </fieldset>
+
+
+
+        <fieldset class="feedback-form__group">
+          <legend class="feedback-form__title">Ваше общее впечатление:</legend>
+          <ul class="feedback-form__list">
+            <li class="feedback-form__item">
+              <label class="control">
+                <input class="control-input" type="radio" name="Скорее положительное" checked>Скорее положительное
+              </label>
             </li>
-            <li>
-              <p>
-                <label for="visitors-surname">ФАМИЛИЯ*:</label>
-                <input type="text" id="visitors-surname" name="visitors-surname" placeholder="Пустота">
-              </p>
+            <li class="feedback-form__item">
+              <label class="control">
+                <input class="control-input" type="radio" name="Скорее отрицательное">Скорее отрицательное
+              </label>
             </li>
-            <li>
-              <p>
-                <label for="visitors-patronymic">ОТЧЕСТВО:</label>
-                <input type="text" id="visitors-patronymic" name="visitors-patronymic" placeholder="Викторович">
-              </p>
+            <li class="feedback-form__item">
+              <label class="control">
+                <input class="control-input" type="radio" name="Затрудняюсь ответить">Затрудняюсь ответить
+              </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset>
-          <legend>Контактная информация:</legend>
-          <ul>
-            <li>
-              <p>
-                <label for="contact-phone">Контактный телефон*:</label>
-                <input type="text" id="contact-phone" name="contact-phone" placeholder="Введите телефон">
-              </p>
+
+        <fieldset class="feedback-form__group">
+          <legend class="feedback-form__title">Посещеные достопримечательности:</legend>
+          <ul class="feedback-form__list">
+            <li class="feedback-form__item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Мост Дьявола" checked>Мост Дьявола
+              </label>
             </li>
-            <li>
-              <p>
-                <label for="email">Электронная почта*:</label>
-                <input type="text" id="email" name="email" placeholder="Пустота">
-              </p>
+            <li class="feedback-form__item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Гора-Колокол" checked>Гора-Колокол
+              </label>
             </li>
-          </ul>
-        </fieldset>
-
-
-        <fieldset>
-          <legend>Контактная информация:</legend>
-        </fieldset>
-
-        <fieldset>
-          <legend>Ваше общее впечатление:</legend>
-          <ul>
-            <li><label>
-                <input type="radio" name="Скорее положительное" checked>Скорее положительное
-              </label></li>
-            <li> <label>
-                <input type="radio" name="Скорее отрицательное">Скорее отрицательное
-              </label></li>
-            <li><label>
-                <input type="radio" name="Затрудняюсь ответить">Затрудняюсь ответить
-              </label></li>
-          </ul>
-        </fieldset>
-
-
-        <fieldset>
-          <legend>Посещеные достопримечательности:</legend>
-          <ul>
-            <li><label>
-                <input type="checkbox" name="Мост Дьявола" checked>Мост Дьявола
-              </label></li>
-            <li> <label>
-                <input type="checkbox" name="Гора-Колокол" checked>Гора-Колокол
-              </label></li>
-            <li><label>
-                <input type="checkbox" name="Слайд-парк" checked>Слайд-парк
-              </label></li>
-            <li><label>
-                <input type="checkbox" name="Красные скалы">Красные скалы
-              </label></li>
+            <li class="feedback-form__item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Слайд-парк" checked>Слайд-парк
+              </label>
+            </li>
+            <li class="feedback-form__item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="Красные скалы">Красные скалы
+              </label>
+            </li>
           </ul>
         </fieldset>
 
 
 
-        <button type="submit">Отправить отзыв</button>
+        <button class="button-form" type="submit">Отправить отзыв</button>
       </form>
     </section>
   </main>
@@ -163,5 +159,15 @@
     </div>
   </footer>
 </body>
+<section class="sending-error">
+  <h2 class="sending-error__title">Что то пошло не так</h2>
+  <p class="sending-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+</section>
+
+<section class="feedback-sent">
+  <h2 class="feedback-sent__title">Ваш отзыв отправлен</h2>
+  <p class="feedback-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на
+    сайте</p>
+</section>
 
 </html>
