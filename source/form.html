@@ -68,7 +68,8 @@
           <p class="form-group__item">
             <label class="form-group__field field">
               Фамилия*:
-              <input class="field__input" type="text" value="Пустота" name="visitors-surname" placeholder="Фамилия" required>
+              <input class="field__input" type="text" value="Пустота" name="visitors-surname" placeholder="Фамилия"
+                required>
             </label>
           </p>
           <p class="form-group__item">
@@ -90,9 +91,9 @@
             </label>
           </p>
           <p class="form-group__item">
-            <label class="form-group__field field" for="email">
+            <label class="form-group__field field">
               Электронная почта*:
-              <input class="field__input" type="email" id="email" name="email" placeholder="Введите e-mail" required>
+              <input class="field__input" type="email" name="email" placeholder="Введите e-mail" required>
             </label>
           </p>
         </fieldset>
@@ -103,19 +104,19 @@
           <ul class="form-impression__list">
             <li class="form-impression__item">
               <label class="form-impression__field radio">
-                <input class="radio-input" type="radio" name="overall-impression" value="Rather-positive" checked>
+                <input class="radio__input" type="radio" name="overall-impression" value="Rather-positive" checked>
                 Скорее положительное
               </label>
             </li>
             <li class="form-impression__item">
               <label class="form-impression__field radio">
-                <input class="radio-input" type="radio" name="overall-impression" value="Rather-negative">
+                <input class="radio__input" type="radio" name="overall-impression" value="Rather-negative">
                 Скорее отрицательное
               </label>
             </li>
             <li class="form-impression__item">
               <label class="form-impression__field radio">
-                <input class="radio-input" type="radio" name="overall-impression" value="Wouldn't know.">
+                <input class="radio__input" type="radio" name="overall-impression" value="Wouldnt know.">
                 Затрудняюсь ответить
               </label>
             </li>
@@ -128,25 +129,25 @@
           <ul class="form-attractions__list">
             <li class="form-attractions__item">
               <label class="form-attractions__field checkbox">
-                <input class="checkbox-input" type="checkbox" name="devil's-bridge" checked>
+                <input class="checkbox__input" type="checkbox" name="devils-bridge" checked>
                 Мост Дьявола
               </label>
             </li>
             <li class="form-attractions__item">
               <label class="form-attractions__field checkbox">
-                <input class="checkbox-input" type="checkbox" name="The-Bell-Mountain" checked>
+                <input class="checkbox__input" type="checkbox" name="The-Bell-Mountain" checked>
                 Гора-Колокол
               </label>
             </li>
             <li class="form-attractions__item">
               <label class="form-attractions__field checkbox">
-                <input class="checkbox-input" type="checkbox" name="Slide-Park" checked>
+                <input class="checkbox__input" type="checkbox" name="Slide-Park" checked>
                 Слайд-парк
               </label>
             </li>
             <li class="form-attractions__item">
               <label class="form-attractions__field checkbox">
-                <input class="checkbox-input" type="checkbox" name="Red-Rocks">
+                <input class="checkbox__input" type="checkbox" name="Red-Rocks">
                 Красные скалы
               </label>
             </li>
@@ -157,7 +158,8 @@
             Опишите свои эмоции:
           </legend>
           <label class="form-group__field field">
-            <textarea class="field__input" name="text-feedback" rows="4" placeholder="Опишите подробно все свои восторги ">
+            <textarea class="field__input" name="text-feedback" rows="4"
+              placeholder="Опишите подробно все свои восторги ">
           </textarea>
           </label>
         </fieldset>
@@ -168,20 +170,36 @@
     </section>
   </main>
   <footer class="main-footer">
-    <b class="main-footer__contact">#visitSEDONA</b>
+    <b class="main-footer__contact">
+      #visitSEDONA
+    </b>
     <ul class="main-footer__social-list social">
       <li class="social__item">
-        <a class="social__link social__link--vkontakte" href="#">Vkontakte</a>
+        <a class="social__link social__link--vkontakte" href="#">
+          <span class="visually-hidden">
+            Vkontakte
+          </span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--telegram" href="#">Telegram</a>
+        <a class="social__link social__link--telegram" href="#">
+          <span class="visually-hidden">
+            Telegram
+          </span>
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--youtube" href="#">Youtube</a>
+        <a class="social__link social__link--youtube" href="#">
+          <span class="visually-hidden">
+            Youtube
+          </span>
+        </a>
       </li>
     </ul>
     <div class="main-footer__copyright copyright">
-      <p class="copyright__text">разработано</p>
+      <p class="copyright__text">
+        разработано
+      </p>
       <a class="copyright__link" href="#">
         <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -207,9 +225,7 @@
       Ваш отзыв отправлен
     </h2>
     <p class="modal-window__text">
-      Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем
-      его на
-      сайте
+      Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте
     </p>
     <button class="modal-window__button button" type="button">
       Закрыть окно
