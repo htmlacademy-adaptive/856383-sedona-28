@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Седона</title>
+</head>
+
+<body class="page-body">
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__logo-image" src="/source/img/logo.svg" width="185" height="96" alt="Логотип Sedona">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">
+              Фото и видео
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link" href="form.html">
+              Форма Отзыва
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/">
+              HTML ACADEMY
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-container">
+    <div class="welcome">
+      <img class="welcome__sedona-image" src="#" width="229" height="39" alt="Седона">
+    </div>
+    <section class="introduction">
+      <h1 class="introduction__title">
+        Оставьте свой отзыв
+      </h1>
+      <p class="introduction__text">
+        Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных
+        вами достопримечательностях
+      </p>
+    </section>
+    <section class="feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <form class="feedback-form order-form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="order-form__group form-group">
+          <legend class="form-group__heading">
+            Представьтесь:
+          </legend>
+          <p class="form-group__item">
+            <label class="form-group__field field">
+              Имя*:
+              <input class="field__input" type="text" value="Пётр" name="visitors-name" placeholder="Имя" required>
+            </label>
+          </p>
+          <p class="form-group__item">
+            <label class="form-group__field field">
+              Фамилия*:
+              <input class="field__input" type="text" value="Пустота" name="visitors-surname" placeholder="Фамилия"
+                required>
+            </label>
+          </p>
+          <p class="form-group__item">
+            <label class="form-group__field field">
+              Отчество:
+              <input class="field__input" type="text" value="Викторович" name="visitors-patronymic"
+                placeholder="Отчество">
+            </label>
+          </p>
+        </fieldset>
+        <fieldset class="order-form__group form-group">
+          <legend class="form-group__heading">
+            Контактная информация:
+          </legend>
+          <p class="form-group__item">
+            <label class="form-group__field field">
+              Контактный телефон*:
+              <input class="field__input" type="tel" name="contact-phone" placeholder="Введите телефон" required>
+            </label>
+          </p>
+          <p class="form-group__item">
+            <label class="form-group__field field">
+              Электронная почта*:
+              <input class="field__input" type="email" name="email" placeholder="Введите e-mail" required>
+            </label>
+          </p>
+        </fieldset>
+        <fieldset class="order-form__group form-impression">
+          <legend class="form-impression__heading">
+            Ваше общее впечатление:
+          </legend>
+          <ul class="form-impression__list">
+            <li class="form-impression__item">
+              <label class="form-impression__field radio">
+                <input class="radio__input" type="radio" name="overall-impression" value="Rather-positive" checked>
+                Скорее положительное
+              </label>
+            </li>
+            <li class="form-impression__item">
+              <label class="form-impression__field radio">
+                <input class="radio__input" type="radio" name="overall-impression" value="Rather-negative">
+                Скорее отрицательное
+              </label>
+            </li>
+            <li class="form-impression__item">
+              <label class="form-impression__field radio">
+                <input class="radio__input" type="radio" name="overall-impression" value="Wouldnt know.">
+                Затрудняюсь ответить
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__group form-attractions">
+          <legend class="form-attractions__heading">
+            Посещеные достопримечательности:
+          </legend>
+          <ul class="form-attractions__list">
+            <li class="form-attractions__item">
+              <label class="form-attractions__field checkbox">
+                <input class="checkbox__input" type="checkbox" name="devils-bridge" checked>
+                Мост Дьявола
+              </label>
+            </li>
+            <li class="form-attractions__item">
+              <label class="form-attractions__field checkbox">
+                <input class="checkbox__input" type="checkbox" name="The-Bell-Mountain" checked>
+                Гора-Колокол
+              </label>
+            </li>
+            <li class="form-attractions__item">
+              <label class="form-attractions__field checkbox">
+                <input class="checkbox__input" type="checkbox" name="Slide-Park" checked>
+                Слайд-парк
+              </label>
+            </li>
+            <li class="form-attractions__item">
+              <label class="form-attractions__field checkbox">
+                <input class="checkbox__input" type="checkbox" name="Red-Rocks">
+                Красные скалы
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="order-form__group form-group">
+          <legend class="form-group__heading">
+            Опишите свои эмоции:
+          </legend>
+          <label class="form-group__field field">
+            <textarea class="field__input" name="text-feedback" rows="4"
+              placeholder="Опишите подробно все свои восторги ">
+          </textarea>
+          </label>
+        </fieldset>
+        <button class="order-form__button button" type="submit">
+          Отправить отзыв
+        </button>
+      </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <b class="main-footer__contact">
+      #visitSEDONA
+    </b>
+    <ul class="main-footer__social-list social">
+      <li class="social__item">
+        <a class="social__link social__link--vkontakte" href="#">
+          <span class="visually-hidden">
+            Vkontakte
+          </span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--telegram" href="#">
+          <span class="visually-hidden">
+            Telegram
+          </span>
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social__link--youtube" href="#">
+          <span class="visually-hidden">
+            Youtube
+          </span>
+        </a>
+      </li>
+    </ul>
+    <div class="main-footer__copyright copyright">
+      <p class="copyright__text">
+        разработано
+      </p>
+      <a class="copyright__link" href="#">
+        <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z"
+            fill="black" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <section class="modal-window">
+    <h2 class="modal-window__title">
+      Что то пошло не так
+    </h2>
+    <p class="modal-window__text">
+      Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+    </p>
+    <button class="modal-window__button button" type="button">
+      Ок
+    </button>
+  </section>
+  <section class="modal-window">
+    <h2 class="modal-window__title">
+      Ваш отзыв отправлен
+    </h2>
+    <p class="modal-window__text">
+      Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте
+    </p>
+    <button class="modal-window__button button" type="button">
+      Закрыть окно
+    </button>
+  </section>
+</body>
+
+</html>
