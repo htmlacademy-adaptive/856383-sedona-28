@@ -1,1 +1,40 @@
-// Начните писать стили здесь
+// Стили blocks base
+@import "base/fonts.scss";
+@import "base/variables.scss";
+@import "base/mixins.scss";
+@import "base/base.scss";
+// Стили blocks header
+@import "blocks/blocks-main-header/main-header.scss";
+@import "blocks/blocks-main-header/main-nav.scss";
+@import "blocks/blocks-main-header/site-list.scss";
+// Стили blocks-index
+@import "blocks/blocks-index/advantages.scss";
+@import "blocks/blocks-index/attributes-city.scss";
+@import "blocks/blocks-index/interested.scss";
+@import "blocks/blocks-index/interested-button.scss";
+@import "blocks/blocks-index/map.scss";
+// Стили blocks-form
+@import "blocks/blocks-form/feedback.scss";
+@import "blocks/blocks-form/feedback-form.scss";
+@import "blocks/blocks-form/order-form.scss";
+@import "blocks/blocks-form/form-group.scss";
+@import "blocks/blocks-form/field.scss";
+@import "blocks/blocks-form/form-impression.scss";
+@import "blocks/blocks-form/radio.scss";
+@import "blocks/blocks-form/form-attractions.scss";
+@import "blocks/blocks-form/checkbox.scss";
+@import "blocks/blocks-form/modal-window.scss";
+// Стили blocks-catalog
+@import "blocks/blocks-catalog/photo.scss";
+@import "blocks/blocks-catalog/description-photo.scss";
+@import "blocks/blocks-catalog/video.scss";
+// Стили blocks-cammon
+@import "blocks/blocks-common/welcome.scss";
+@import "blocks/blocks-common/main-container.scss";
+@import "blocks/blocks-common/page-body.scss";
+@import "blocks/blocks-common/introduction.scss";
+@import "blocks/blocks-common/button.scss";
+// Стили block-main-footer
+@import "blocks/blocks-main-footer/main-footer.scss";
+@import "blocks/blocks-main-footer/copyright.scss";
+@import "blocks/blocks-main-footer/social.scss";

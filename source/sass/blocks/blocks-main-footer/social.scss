@@ -1,0 +1,10 @@
+.social {
+  @include reset-list;
+}
+
+.social__item {
+  width: 48px;
+  height: 48px;
+  background-color: $blue;
+}
+

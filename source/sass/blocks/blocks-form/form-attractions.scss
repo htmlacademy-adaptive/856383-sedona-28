@@ -1,0 +1,18 @@
+.form-attractions__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.form-attractions__list {
+  @include reset-list;
+}
+
+.form-attractions__field {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+}
