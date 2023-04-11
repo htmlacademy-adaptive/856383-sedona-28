@@ -2,6 +2,14 @@
   @include reset-list;
 }
 
+.advantages__item:nth-child(1) {
+  color: #ffffff;
+}
+
+.advantages__item:nth-child(2) {
+  color: #ffffff;
+}
+
 .advantages__wrapper-discription {
   background-color: $blue;
   padding: 54px 18px 40px 18px;
@@ -13,35 +21,23 @@
 }
 
 .advantages__title {
-  &--white {
-    color: $white;
-  }
   margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: $black;
   text-transform: uppercase;
 }
 
 .advantages__number {
-  &--white {
-    color: $white;
-  }
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: $grey;
 }
 
 .advantages__text {
-  &--white {
-    color: $white;
-  }
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: $grey;
   text-transform: uppercase;
 }

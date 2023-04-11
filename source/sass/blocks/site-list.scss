@@ -1,0 +1,28 @@
+.site-list {
+  list-style: none;
+}
+
+.site-list__link {
+  display: block;
+  padding: 15px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $blue;
+
+  &:hover {
+    background-color: $element-hover;
+  }
+
+  &:active {
+    background-color: $element-click;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--active {
+    color: $active-link-color;
+  }
+}
