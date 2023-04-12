@@ -1,0 +1,25 @@
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin preparation-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  text-transform: uppercase;
+  // text-align: center;
+}
+
+@mixin preparation-paragraph {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $grey;
+  text-transform: uppercase;
+  // text-align: center;
+}

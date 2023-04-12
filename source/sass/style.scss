@@ -1,1 +1,33 @@
-// Начните писать стили здесь
+// Стили blocks base
+@import "base/fonts.scss";
+@import "base/variables.scss";
+@import "base/mixins.scss";
+@import "base/base.scss";
+// Стили blocks header
+@import "blocks/site-list.scss";
+// Стили blocks-index
+@import "blocks/advantages.scss";
+@import "blocks/attributes-city.scss";
+@import "blocks/interested.scss";
+@import "blocks/map.scss";
+// Стили blocks-form
+@import "blocks/form-group.scss";
+@import "blocks/field.scss";
+@import "blocks/form-impression.scss";
+@import "blocks/radio.scss";
+@import "blocks/form-attractions.scss";
+@import "blocks/checkbox.scss";
+@import "blocks/modal-window.scss";
+// Стили blocks-catalog
+@import "blocks/photo.scss";
+@import "blocks/description-photo.scss";
+@import "blocks/video.scss";
+// Стили blocks-cammon
+@import "blocks/welcome.scss";
+@import "blocks/page-body.scss";
+@import "blocks/introduction.scss";
+@import "blocks/button.scss";
+// Стили block-main-footer
+@import "blocks/main-footer.scss";
+@import "blocks/copyright.scss";
+@import "blocks/social.scss";

@@ -1,0 +1,18 @@
+.form-impression__heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+  text-transform: uppercase;
+}
+
+.form-impression__list {
+  @include reset-list;
+}
+
+.form-impression__field {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+}
