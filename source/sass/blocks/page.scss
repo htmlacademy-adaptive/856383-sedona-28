@@ -1,5 +1,11 @@
 .page__body {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
+@media (min-width: $desktop-width) {
+  .page {
+    padding: 0 40px 0 40px;
+    background-color: #E7E5E5;
+  }
+}

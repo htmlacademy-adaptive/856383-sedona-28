@@ -16,3 +16,17 @@
   line-height: 26px;
   color: $black;
 }
+
+@media (min-width: $tablet-width) {
+  .form-impression__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form-attractions__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
