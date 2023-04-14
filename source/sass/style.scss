@@ -4,6 +4,8 @@
 @import "base/mixins.scss";
 @import "base/base.scss";
 // Стили blocks header
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/site-list.scss";
 // Стили blocks-index
 @import "blocks/advantages.scss";
@@ -27,7 +29,7 @@
 @import "blocks/page-body.scss";
 @import "blocks/introduction.scss";
 @import "blocks/button.scss";
+@import "blocks/page.scss";
 // Стили block-main-footer
 @import "blocks/main-footer.scss";
-@import "blocks/copyright.scss";
 @import "blocks/social.scss";

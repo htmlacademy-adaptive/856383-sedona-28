@@ -1,10 +1,6 @@
-.site-list {
-  list-style: none;
-}
-
 .site-list__link {
   display: block;
-  padding: 15px 0;
+  padding: 15px 0 15px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -12,6 +8,7 @@
   text-decoration: none;
   text-transform: uppercase;
   background-color: $blue;
+  text-align: center;
 
   &:hover {
     background-color: $element-hover;
@@ -24,5 +21,13 @@
 
   &--active {
     color: $active-link-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list__link {
+    background-color: $white;
+    color: $black;
+    padding: 15px 47px 15px 47px;
   }
 }
