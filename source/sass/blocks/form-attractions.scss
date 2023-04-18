@@ -1,18 +1,95 @@
 .form-attractions__heading {
+  position: relative;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: $black;
+  color: $color-black;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .form-attractions__list {
   @include reset-list;
+  min-width: 280px;
+  margin: 0;
+}
+
+.form-attractions__item {
+  margin: 0 0 16px 0;
+}
+
+.form-attractions__item:last-child {
+  margin-bottom: 0;
 }
 
 .form-attractions__field {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: $black;
+  color: $color-black;
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: $medium-width) {
+  .form-attractions__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-attractions__item {
+    margin-right: 32px;
+  }
+
+  .form-attractions__heading::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 50%;
+    right: -132px;
+    background-color: #d8d8d8;
+  }
+
+  .form-attractions__heading::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 50%;
+    left: -140px;
+    background-color: #d8d8d8;
+  }
+}
+
+@media (min-width: $large-width) {
+  .form-attractions__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .form-attractions__item {
+    margin-right: 64px;
+  }
+
+  .form-attractions__heading::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    top: 50%;
+    right: -341px;
+    background-color: #d8d8d8;
+  }
+
+  .form-attractions__heading::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    top: 50%;
+    left: -341px;
+    background-color: #d8d8d8;
+  }
 }

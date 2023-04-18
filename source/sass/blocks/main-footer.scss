@@ -1,6 +1,28 @@
+.main-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
 .main-footer__contact {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
-  color: $black;
+  color: $color-black;
+}
+
+.main-footer__copyright {
+  display: flex;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+@media (min-width: $medium-width) {
+  .main-footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

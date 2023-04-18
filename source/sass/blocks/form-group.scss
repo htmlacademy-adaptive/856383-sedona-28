@@ -1,15 +1,73 @@
 .form-group__heading {
+  position: relative;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: $black;
+  color: $color-black;
   text-transform: uppercase;
+  text-align: center;
 }
 
-.form-group__field {
+.form-group__item {
+  padding: 0;
+  margin: 0 0 16px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: $grey;
+  color: $color-grey-800;
   text-transform: uppercase;
+}
+
+.form-group__item:last-child {
+  margin: 0;
+}
+
+.form-group__field {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $medium-width) {
+  .form-group__heading::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 50%;
+    right: -195px;
+    background-color: #d8d8d8;
+  }
+
+  .form-group__heading::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 50%;
+    left: -195px;
+    background-color: #d8d8d8;
+  }
+}
+
+@media (min-width: $large-width) {
+  .form-group__heading::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    top: 50%;
+    right: -410px;
+    background-color: #d8d8d8;
+  }
+
+  .form-group__heading::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    top: 50%;
+    left: -410px;
+    background-color: #d8d8d8;
+  }
 }

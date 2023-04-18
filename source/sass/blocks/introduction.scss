@@ -1,5 +1,4 @@
 .introduction {
-  padding: 32px 18px 32px 18px;
   text-align: center;
 }
 
@@ -8,7 +7,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: $black;
+  color: $color-black;
   text-transform: uppercase;
   margin-bottom: 32px;
 }
@@ -18,6 +17,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: $grey;
+  color: $color-grey-800;
   text-transform: uppercase;
+}
+
+@media (min-width: $medium-width) {
+  .introduction {
+    padding: 48px 124px 55px 124px;
+  }
 }

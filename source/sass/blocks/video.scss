@@ -1,9 +1,13 @@
+.video {
+  text-align: center;
+}
+
 .video__title {
   margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: $black;
+  color: $color-black;
   text-transform: uppercase;
 }
 
@@ -12,7 +16,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: $grey;
+  color: $color-grey-800;
   text-transform: uppercase;
 }
 

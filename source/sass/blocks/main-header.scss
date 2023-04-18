@@ -1,0 +1,17 @@
+.main-header {
+  position: relative;
+}
+
+.main-header__logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 185px;
+}
+
+@media (min-width: $medium-width) {
+  .main-header__logo {
+    z-index: 1;
+  }
+}

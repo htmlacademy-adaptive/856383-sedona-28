@@ -1,26 +1,59 @@
-.attributes-city {
-  @include reset-list;
-}
-
 .attributes-city__item {
-  background-color: $white;
+  padding: 23px 18px 25px 65px;
+  background-color: $color-white;
   text-align: left;
 }
 
 .attributes-city__title {
-  margin: 0;
+  margin: 0 0 16px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: $black;
+  color: $color-black;
   text-transform: uppercase;
 }
 
 .attributes-city__text {
-  margin: 0;
+  margin: 0 0 33px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: $grey;
+  color: $color-grey-800;
   text-transform: uppercase;
+}
+
+@media (min-width: $medium-width) {
+  .attributes-city__item {
+    padding: 158px 33px 60px 33px;
+    text-align: center;
+  }
+
+  .attributes-city__title {
+    margin: 0 0 30px 0;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .attributes-city__text {
+    margin: 0;
+  }
+}
+
+@media (min-width: $large-width) {
+  .attributes-city__item {
+    padding: 169px 50px 69px 50px;
+    text-align: center;
+  }
+
+  .attributes-city__title {
+    margin: 0 0 30px 0;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .attributes-city__text {
+    margin: 0;
+  }
 }

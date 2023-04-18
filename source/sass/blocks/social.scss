@@ -1,3 +1,7 @@
 .social__item {
-  background-color: $blue;
+  background-color: $color-blue-200;
+}
+
+.main-footer__social-list {
+  @include reset-list;
 }

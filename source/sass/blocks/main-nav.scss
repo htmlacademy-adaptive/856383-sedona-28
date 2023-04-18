@@ -1,0 +1,39 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.main-nav__toggle {
+  position: relative;
+  margin-left: auto;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  margin-right: 20px;
+  width: 23px;
+  height: 23px;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+}
+
+
+@media (min-width: $medium-width) {
+  .main-nav__list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: relative;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
