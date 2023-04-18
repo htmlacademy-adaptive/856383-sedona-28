@@ -1,7 +1,5 @@
-.main-container__video {
+.video {
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 .video__title {
@@ -9,7 +7,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: $black;
+  color: $color-black;
   text-transform: uppercase;
 }
 
@@ -18,7 +16,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: $grey;
+  color: $color-grey-800;
   text-transform: uppercase;
 }
 

@@ -1,13 +1,12 @@
 .advantages__list {
   @include reset-list;
-  background-color: $white-grey;
+  background-color: $color-grey-50;
 }
 
-
 .advantages__wrapper-discription {
-  background-color: $blue;
+  background-color: $color-blue-200;
   padding: 37px 18px 37px 18px;
-  color: $white;
+  color: $color-white;
 }
 
 .advantages__item {
@@ -22,7 +21,7 @@
 }
 
 .advantages__title {
-  margin: 0 0 11px 0;
+  margin: 21px 0 11px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -36,7 +35,7 @@
 }
 
 .advantages__text {
-  margin: 17px 0 0 0;
+  margin: 17px 0 24px 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;

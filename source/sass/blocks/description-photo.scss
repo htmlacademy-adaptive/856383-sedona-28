@@ -3,7 +3,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  color: $black;
+  color: $color-black;
   text-transform: uppercase;
 }
 
@@ -12,12 +12,30 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: $grey;
+  color: $color-grey-800;
 }
 
 .description-photo__like {
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
-  color: $black;
+  color: $color-black;
+}
+
+.description-photo__wrapper {
+  margin: 0 0 11px 0;
+}
+
+@media (min-width: $large-width) {
+  .description-photo__title {
+    color: $color-white;
+  }
+
+  .description-photo__text {
+    color: $color-white;
+  }
+
+  .description-photo__like {
+    color: $color-white;
+  }
 }

@@ -1,11 +1,12 @@
 .page__body {
   max-width: 1200px;
+  min-width: 300px;
   padding: 0;
   margin: 0 auto;
 }
 
 @media (min-width: $large-width) {
   .page {
-    background-color: $white-grey-100;
+    background-color: $color-grey-100;
   }
 }
