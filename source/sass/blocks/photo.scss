@@ -2,7 +2,7 @@
   @include reset-list;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $medium-width) {
   .photo__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -13,9 +13,8 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $large-width) {
   .photo__list {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 

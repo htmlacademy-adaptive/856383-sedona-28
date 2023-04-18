@@ -1,7 +1,4 @@
 .introduction {
-  max-width: 520px;
-  margin: 0 auto;
-  padding: 32px 18px 32px 18px;
   text-align: center;
 }
 
@@ -24,7 +21,7 @@
   text-transform: uppercase;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $medium-width) {
   .introduction {
     padding: 48px 124px 55px 124px;
   }

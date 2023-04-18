@@ -2,10 +2,10 @@ $black: #000000;
 $grey: #333333;
 $blue: #81b3d2;
 $white: #ffffff;
-$white-100: #e7e5e5;
+$white-grey-100: #e7e5e5;
 $white-grey: #eeeeee;
 $active-link-color: #766357;
-$placeholder-color: rgba(0, 0, 0, 0.3);
+$black-opacity-03: rgba(0, 0, 0, 0.3);
 $legend-color: rgba(51, 51, 51, 0.6);
 $element-disable: #e5e5e5;
 $element-click: #5496bd;
@@ -16,6 +16,7 @@ $radio-checkbox-click: #d5d5d5;
 
 // Viewports
 
-$tablet-width: 768px;
-$desktop-width: 1200px;
-$mobile-width-only: 767px;
+$small-width-only: 767px;
+$medium-width: 768px;
+$large-width: 1200px;
+

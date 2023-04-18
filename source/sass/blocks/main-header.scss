@@ -7,10 +7,10 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  max-width: 185px;
+  width: 185px;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $medium-width) {
   .main-header__logo {
     z-index: 1;
   }

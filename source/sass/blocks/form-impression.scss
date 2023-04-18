@@ -1,13 +1,26 @@
 .form-impression__heading {
+  position: relative;
+  margin: 0 0 20px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: $black;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .form-impression__list {
   @include reset-list;
+  min-width: 280px;
+  margin: 0 20px;
+}
+
+.form-impression__item {
+  margin-bottom: 16px;
+}
+
+.form-impression__item:last-child {
+  margin-bottom: 0;
 }
 
 .form-impression__field {
@@ -15,18 +28,78 @@
   font-size: 18px;
   line-height: 26px;
   color: $black;
+  display: flex;
+  align-items: center;
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $medium-width) {
+  .form-impression__heading::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 50%;
+    right: -189px;
+    background-color: #d8d8d8;
+  }
+
+  .form-impression__heading::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 50%;
+    left: -189px;
+    background-color: #d8d8d8;
+  }
+
   .form-impression__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .form-attractions__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .form-impression__item {
+    margin-right: 16px;
   }
 }
+
+@media (min-width: $large-width) {
+  .form-impression__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .form-impression__item {
+    margin-right: 28px;
+  }
+
+  .form-impression__field {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: $black;
+    display: flex;
+    align-items: center;
+  }
+
+  .form-impression__heading::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    top: 50%;
+    right: -394px;
+    background-color: #d8d8d8;
+  }
+
+  .form-impression__heading::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    top: 50%;
+    left: -394px;
+    background-color: #d8d8d8;
+  }
+}
+

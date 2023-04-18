@@ -1,6 +1,14 @@
 .field__input {
+  max-width: 264px;
+  padding: 19px 16px 16px 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: $black;
+  background-color: $radio-checkbox;
+  border: 0;
+}
+
+.field__name {
+  margin: 0 0 0 16px;
 }

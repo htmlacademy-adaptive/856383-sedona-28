@@ -8,14 +8,13 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class=" page__body page-body">
+<body class="page__body page-body">
   <header class="main-header">
     <a class="main-header__logo" href="index.html">
       <img class="main-header__logo-image" src="img/logo.svg" width="185" height="96" alt="Логотип Sedona">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a class="site-list__link" href="index.html">
@@ -38,14 +37,13 @@
             </a>
           </li>
         </ul>
-      </div>
     </nav>
   </header>
   <main class="main-container">
     <div class="welcome">
       <img class="welcome__sedona-image" src="img/sedona.svg" width="229" height="39" alt="Седона">
     </div>
-    <section class="introduction">
+    <section class="main-container__introduction introduction">
       <h1 class="introduction__title">
         Оставьте свой отзыв
       </h1>
@@ -64,20 +62,20 @@
             </legend>
             <p class="form-group__item">
               <label class="form-group__field field">
-                Имя*:
+                <span class="field__name">Имя*:</span>
                 <input class="field__input" type="text" value="Пётр" name="visitors-name" placeholder="Имя" required>
               </label>
             </p>
             <p class="form-group__item">
               <label class="form-group__field field">
-                Фамилия*:
+                <span class="field__name">Фамилия*:</span>
                 <input class="field__input" type="text" value="Пустота" name="visitors-surname" placeholder="Фамилия"
                   required>
               </label>
             </p>
             <p class="form-group__item">
               <label class="form-group__field field">
-                Отчество:
+                <span class="field__name">Отчество:</span>
                 <input class="field__input" type="text" value="Викторович" name="visitors-patronymic"
                   placeholder="Отчество">
               </label>
@@ -85,17 +83,17 @@
           </fieldset>
           <fieldset class="order-form__group form-group">
             <legend class="form-group__heading">
-              Контактная информация:
+              <span class="field__name">Контактная информация:</span>
             </legend>
             <p class="form-group__item">
               <label class="form-group__field field">
-                Контактный телефон*:
+                <span class="field__name">Контактный телефон*:</span>
                 <input class="field__input" type="tel" name="contact-phone" placeholder="Введите телефон" required>
               </label>
             </p>
             <p class="form-group__item">
               <label class="form-group__field field">
-                Электронная почта*:
+                <span class="field__name">Электронная почта*:</span>
                 <input class="field__input" type="email" name="email" placeholder="Введите e-mail" required>
               </label>
             </p>

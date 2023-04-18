@@ -4,32 +4,48 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  background-color: $blue;
   color: $white;
   text-decoration: none;
   text-transform: uppercase;
-  background-color: $blue;
   text-align: center;
+}
 
-  &:hover {
-    background-color: $element-hover;
-  }
+@media (max-width: $small-width-only) {
+  .site-list__link {
+    &:hover {
+      background-color: $element-hover;
+    }
 
-  &:active {
-    background-color: $element-click;
-    color: rgba(255, 255, 255, 0.3);
-  }
-
-  &--active {
-    color: $active-link-color;
+    &:active {
+      background-color: $element-click;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $medium-width) {
+  .site-list__item:nth-child(3) {
+    grid-column: 4/5;
+  }
+
   .site-list__link {
     background-color: $white;
     color: $black;
-    font-weight: 700;
     font-size: 14px;
     line-height: 21px;
+
+    &:hover {
+      color: $blue;
+      background-color: $white;
+    }
+
+    &:active {
+      color: $black-opacity-03;
+    }
+
+    &--active {
+      color: $active-link-color;
+    }
   }
 }

@@ -1,11 +1,11 @@
 .page__body {
+  max-width: 1200px;
   padding: 0;
   margin: 0 auto;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $large-width) {
   .page {
-    padding: 0 40px 0 40px;
-    background-color: $white-100;
+    background-color: $white-grey-100;
   }
 }
