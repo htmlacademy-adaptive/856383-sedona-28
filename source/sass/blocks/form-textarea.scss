@@ -1,0 +1,55 @@
+.form-textarea__heading {
+  position: relative;
+  margin: 0 0 28px 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $color-black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+@media (min-width: $medium-width) {
+  .form-textarea__heading::after {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 50%;
+    right: -210px;
+    background-color: $color-grey-250;
+  }
+
+  .form-textarea__heading::before {
+    content: "";
+    position: absolute;
+    width: 123px;
+    height: 1px;
+    top: 50%;
+    left: -210px;
+    background-color: $color-grey-250;
+  }
+}
+
+@media (min-width: $large-width) {
+  .form-textarea__heading::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    top: 50%;
+    right: -393px;
+    background-color: $color-grey-250;
+  }
+
+  .form-textarea__heading::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    top: 50%;
+    left: -393px;
+    background-color: $color-grey-250;
+  }
+}

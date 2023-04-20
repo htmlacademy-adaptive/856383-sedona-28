@@ -48,8 +48,8 @@
     width: 123px;
     height: 1px;
     top: 50%;
-    right: -132px;
-    background-color: #d8d8d8;
+    right: -170px;
+    background-color: $color-grey-250;
   }
 
   .form-attractions__heading::before {
@@ -58,8 +58,8 @@
     width: 123px;
     height: 1px;
     top: 50%;
-    left: -140px;
-    background-color: #d8d8d8;
+    left: -170px;
+    background-color: $color-grey-250;
   }
 }
 
@@ -80,7 +80,7 @@
     height: 1px;
     top: 50%;
     right: -341px;
-    background-color: #d8d8d8;
+    background-color: $color-grey-250;
   }
 
   .form-attractions__heading::before {
@@ -90,6 +90,6 @@
     height: 1px;
     top: 50%;
     left: -341px;
-    background-color: #d8d8d8;
+    background-color: $color-grey-250;
   }
 }

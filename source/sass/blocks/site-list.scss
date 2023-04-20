@@ -12,6 +12,12 @@
 }
 
 @media (max-width: $small-width-only) {
+  .site-list__item {
+    display: none;
+  }
+}
+
+@media (max-width: $small-width-only) {
   .site-list__link {
     &:hover {
       background-color: $color-blue-300;

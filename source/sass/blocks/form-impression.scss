@@ -39,8 +39,8 @@
     width: 123px;
     height: 1px;
     top: 50%;
-    right: -189px;
-    background-color: #d8d8d8;
+    right: -210px;
+    background-color: $color-grey-250;
   }
 
   .form-impression__heading::before {
@@ -49,8 +49,8 @@
     width: 123px;
     height: 1px;
     top: 50%;
-    left: -189px;
-    background-color: #d8d8d8;
+    left: -210px;
+    background-color: $color-grey-250;
   }
 
   .form-impression__list {
@@ -89,7 +89,7 @@
     height: 1px;
     top: 50%;
     right: -394px;
-    background-color: #d8d8d8;
+    background-color: $color-grey-250;
   }
 
   .form-impression__heading::before {
@@ -99,6 +99,6 @@
     height: 1px;
     top: 50%;
     left: -394px;
-    background-color: #d8d8d8;
+    background-color: $color-grey-250;
   }
 }

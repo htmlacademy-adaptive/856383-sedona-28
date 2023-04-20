@@ -1,6 +1,7 @@
 .main-nav {
   display: flex;
   flex-direction: column;
+  height: 56px;
 }
 
 .main-nav__list {
@@ -15,14 +16,49 @@
 .main-nav__toggle {
   position: relative;
   margin-left: auto;
-  margin-top: 17px;
-  margin-bottom: 17px;
+  margin-top: 26px;
+  margin-bottom: 26px;
   margin-right: 20px;
   width: 23px;
   height: 23px;
   z-index: 1;
   cursor: pointer;
   border: none;
+  background-color: transparent;
+}
+
+.main-nav--closed {
+  bottom: 10px;
+  width: 23px;
+  height: 4px;
+  background-color: $color-blue-200;
+  box-shadow: 0 8px 0 0 $color-blue-200, 0 16px 0 0 $color-blue-200;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--opened {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 4px;
+    left: 0;
+    top: -2px;
+    background-color: $color-white;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 

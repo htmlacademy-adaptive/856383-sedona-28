@@ -1,5 +1,4 @@
 .form-group__heading {
-  position: relative;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
@@ -28,46 +27,3 @@
   flex-direction: column;
 }
 
-@media (min-width: $medium-width) {
-  .form-group__heading::after {
-    content: "";
-    position: absolute;
-    width: 123px;
-    height: 1px;
-    top: 50%;
-    right: -195px;
-    background-color: #d8d8d8;
-  }
-
-  .form-group__heading::before {
-    content: "";
-    position: absolute;
-    width: 123px;
-    height: 1px;
-    top: 50%;
-    left: -195px;
-    background-color: #d8d8d8;
-  }
-}
-
-@media (min-width: $large-width) {
-  .form-group__heading::after {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 1px;
-    top: 50%;
-    right: -410px;
-    background-color: #d8d8d8;
-  }
-
-  .form-group__heading::before {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 1px;
-    top: 50%;
-    left: -410px;
-    background-color: #d8d8d8;
-  }
-}
