@@ -35,8 +35,10 @@
   box-shadow: 0 8px 0 0 $color-blue-200, 0 16px 0 0 $color-blue-200;
 }
 
-.main-nav--nojs .main-nav__toggle {
-  display: none;
+.main-nav__toggle {
+  &--nojs {
+    display: none;
+  }
 }
 
 .main-nav--opened {
@@ -48,7 +50,7 @@
     height: 4px;
     left: 0;
     top: -2px;
-    background-color: $color-white;
+    background-color: $color-black;
   }
 
   &::before {

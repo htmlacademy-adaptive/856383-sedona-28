@@ -11,11 +11,6 @@
   text-align: center;
 }
 
-@media (max-width: $small-width-only) {
-  .site-list__item {
-    display: none;
-  }
-}
 
 @media (max-width: $small-width-only) {
   .site-list__link {
@@ -28,6 +23,14 @@
       color: rgba(255, 255, 255, 0.3);
     }
   }
+
+  .site-list__item {
+    display: none;
+  }
+}
+
+.main-nav--nojs .site-list__item {
+  display: block;
 }
 
 @media (min-width: $medium-width) {
