@@ -6,6 +6,7 @@
   color: $color-black;
   text-transform: uppercase;
   text-align: center;
+  width: 100%;
 }
 
 .form-group__item {
@@ -23,6 +24,5 @@
 }
 
 .form-group__field {
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }

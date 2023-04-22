@@ -23,14 +23,6 @@
       color: rgba(255, 255, 255, 0.3);
     }
   }
-
-  .site-list__item {
-    display: none;
-  }
-}
-
-.main-nav--nojs .site-list__item {
-  display: block;
 }
 
 @media (min-width: $medium-width) {

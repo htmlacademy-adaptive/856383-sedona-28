@@ -1,5 +1,4 @@
 .field__input {
-  max-width: 264px;
   padding: 19px 16px 16px 16px;
   font-weight: 700;
   font-size: 18px;
@@ -10,6 +9,7 @@
 }
 
 .field__name {
+  display: block;
   margin: 0 0 0 16px;
 }
 
@@ -17,21 +17,20 @@
   padding: 16px;
   border: 0;
   background-color: $color-grey-200;
-  width: 280px;
-  height: 150px;
+  width: 100%;
   color: $color-black;
 }
 
-@media (min-width: $medium-width) {
-  .field__textarea {
-    width: 648px;
-    height: 160px;
-  }
-}
+// @media (min-width: $medium-width) {
+//   .field__textarea {
+//     width: 648px;
+//     height: 160px;
+//   }
+// }
 
-@media (min-width: $large-width) {
-  .field__textarea {
-    width: 768px;
-    height: 160px;
-  }
-}
+// @media (min-width: $large-width) {
+//   .field__textarea {
+//     width: 768px;
+//     height: 160px;
+//   }
+// }

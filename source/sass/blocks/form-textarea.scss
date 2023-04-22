@@ -1,6 +1,7 @@
 .form-textarea__heading {
   position: relative;
-  margin: 0 0 28px 0;
+  padding: 0 0 28px 0;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -11,45 +12,23 @@
 
 
 @media (min-width: $medium-width) {
-  .form-textarea__heading::after {
-    content: "";
-    position: absolute;
-    width: 123px;
-    height: 1px;
-    top: 50%;
-    right: -210px;
-    background-color: $color-grey-250;
-  }
-
+  .form-textarea__heading::after,
   .form-textarea__heading::before {
     content: "";
-    position: absolute;
-    width: 123px;
     height: 1px;
-    top: 50%;
-    left: -210px;
-    background-color: $color-grey-250;
+    background-color: $color-black;
+  }
+
+  .form-textarea__heading {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 123px 1fr 123px;
+    gap: 62px;
   }
 }
 
 @media (min-width: $large-width) {
-  .form-textarea__heading::after {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 1px;
-    top: 50%;
-    right: -393px;
-    background-color: $color-grey-250;
-  }
-
-  .form-textarea__heading::before {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 1px;
-    top: 50%;
-    left: -393px;
-    background-color: $color-grey-250;
+  .form-textarea__heading {
+    grid-template-columns: 280px 1fr 280px;
   }
 }

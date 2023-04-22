@@ -1,6 +1,7 @@
 .form-attractions__heading {
   position: relative;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -11,12 +12,10 @@
 
 .form-attractions__list {
   @include reset-list;
-  min-width: 280px;
-  margin: 0;
 }
 
 .form-attractions__item {
-  margin: 0 0 16px 0;
+  margin: 0;
 }
 
 .form-attractions__item:last-child {
@@ -35,31 +34,24 @@
 @media (min-width: $medium-width) {
   .form-attractions__list {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .form-attractions__item {
-    margin-right: 32px;
-  }
 
-  .form-attractions__heading::after {
-    content: "";
-    position: absolute;
-    width: 123px;
-    height: 1px;
-    top: 50%;
-    right: -170px;
-    background-color: $color-grey-250;
-  }
-
+  .form-attractions__heading::after,
   .form-attractions__heading::before {
     content: "";
-    position: absolute;
-    width: 123px;
     height: 1px;
-    top: 50%;
-    left: -170px;
-    background-color: $color-grey-250;
+    background-color: $color-black;
+  }
+
+  .form-attractions__heading {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 123px 1fr 123px;
+    gap: 62px;
   }
 }
 
@@ -69,27 +61,8 @@
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .form-attractions__item {
-    margin-right: 64px;
-  }
-
-  .form-attractions__heading::after {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 1px;
-    top: 50%;
-    right: -341px;
-    background-color: $color-grey-250;
-  }
-
-  .form-attractions__heading::before {
-    content: "";
-    position: absolute;
-    width: 280px;
-    height: 1px;
-    top: 50%;
-    left: -341px;
-    background-color: $color-grey-250;
+  .form-attractions__heading {
+    grid-template-columns: 280px 1fr 280px;
+    gap: 62px;
   }
 }

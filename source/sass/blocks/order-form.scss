@@ -1,7 +1,4 @@
 .order-form__group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0 0 64px 0;
   padding: 0;
   border: 0;
@@ -39,8 +36,10 @@
 
 @media (min-width: $medium-width) {
   .order-form__wrapper-user-information {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 43px;
   }
 
   .order-form__wrapper-user-information::after {
@@ -73,6 +72,10 @@
 }
 
 @media (min-width: $large-width) {
+  .order-form__wrapper-user-information {
+    gap: 63px;
+  }
+
   .order-form__button {
     padding: 16px 100px;
   }

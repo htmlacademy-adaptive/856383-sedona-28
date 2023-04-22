@@ -21,8 +21,26 @@
   text-transform: uppercase;
 }
 
+.introduction__title-text {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $color-black;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
 @media (min-width: $medium-width) {
   .introduction {
     padding: 48px 124px 55px 124px;
+  }
+
+  .introduction__title {
+    font-size: 30px;
+  }
+
+  .introduction__title-text {
+    font-size: 21px;
   }
 }
