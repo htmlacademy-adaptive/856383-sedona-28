@@ -1,5 +1,38 @@
 .radio__input {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  opacity: 0;
+}
+
+.radio__input[type="radio"]:checked + .radio__icon::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  background-position: center;
+  border-radius: 50%;
+  left: 32%;
+  top: 32%;
+}
+
+.radio__input:active[type="radio"]:checked + .radio__icon::before {
+  opacity: 0.3;
+}
+
+.radio__icon {
+  position: absolute;
   width: 46px;
   height: 46px;
   background-color: $color-grey-200;
+  border-radius: 50%;
+}
+
+.radio:hover .radio__icon {
+  background-color: $color-grey-150;
+}
+
+.radio:active .radio__icon {
+  background-color: $color-grey-300;
 }

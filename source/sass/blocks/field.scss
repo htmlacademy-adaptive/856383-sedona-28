@@ -9,6 +9,15 @@
   border: 0;
 }
 
+.field__input:active {
+  background-color: $color-white;
+}
+
+.field__input:hover {
+  background-color: $color-grey-150;
+}
+
+
 .field__name {
   display: block;
   margin: 0 0 0 16px;
@@ -19,6 +28,7 @@
   font-size: 18px;
   line-height: 26px;
   padding: 16px;
+  margin-bottom: 56px;
   border: 0;
   background-color: $color-grey-200;
   width: 100%;
@@ -46,8 +56,6 @@
   width: 18px;
   height: 18px;
   background-image: url("../img/icon-phone.svg");
-  background-position: 0 0;
-
 }
 
 .field__icon-email {
@@ -66,4 +74,10 @@
   width: 16px;
   height: 12px;
   background-image: url("../img/icon-mail.svg");
+}
+
+@media (min-width: $medium-width) {
+  .field__textarea {
+    margin-bottom: 48px;
+  }
 }
