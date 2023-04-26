@@ -1,13 +1,14 @@
 .form-textarea__heading {
   position: relative;
-  padding: 0 0 28px 0;
-  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 28px;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   color: $color-black;
   text-transform: uppercase;
   text-align: center;
+  width: 100%;
 }
 
 
@@ -16,7 +17,7 @@
   .form-textarea__heading::before {
     content: "";
     height: 1px;
-    background-color: $color-black;
+    background-color: $color-grey-250;
   }
 
   .form-textarea__heading {

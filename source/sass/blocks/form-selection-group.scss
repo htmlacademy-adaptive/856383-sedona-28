@@ -1,20 +1,21 @@
-.form-impression__heading {
+.form-selection-group__heading {
   position: relative;
-  padding: 0 0 20px 0;
-  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: $color-black;
   text-transform: uppercase;
   text-align: center;
+  width: 100%;
 }
 
-.form-impression__list {
+.form-selection-group__list {
   @include reset-list;
 }
 
-.form-impression__field {
+.form-selection-group__field {
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -24,21 +25,22 @@
 }
 
 @media (min-width: $medium-width) {
-  .form-impression__heading::after,
-  .form-impression__heading::before {
+  .form-selection-group__heading::after,
+  .form-selection-group__heading::before {
     content: "";
     height: 1px;
-    background-color: $color-black;
+    background-color: $color-grey-250;
   }
 
-  .form-impression__heading {
+  .form-selection-group__heading {
     display: grid;
     align-items: center;
     grid-template-columns: 123px 1fr 123px;
     gap: 62px;
+    margin-bottom: 28px;
   }
 
-  .form-impression__list {
+  .form-selection-group__list {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(2, 1fr);
@@ -46,12 +48,12 @@
 }
 
 @media (min-width: $large-width) {
-  .form-impression__list {
+  .form-selection-group__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .form-impression__heading {
+  .form-selection-group__heading {
     grid-template-columns: 280px 1fr 280px;
     gap: 62px;
   }

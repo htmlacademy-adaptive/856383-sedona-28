@@ -1,13 +1,13 @@
 .form-attractions__heading {
   position: relative;
-  padding-bottom: 20px;
-  margin: 0 auto;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: $color-black;
   text-transform: uppercase;
   text-align: center;
+  width: 100%;
 }
 
 .form-attractions__list {
@@ -43,7 +43,7 @@
   .form-attractions__heading::before {
     content: "";
     height: 1px;
-    background-color: $color-black;
+    background-color: $color-grey-250;
   }
 
   .form-attractions__heading {

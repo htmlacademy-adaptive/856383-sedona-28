@@ -1,5 +1,6 @@
 .field__input {
   padding: 19px 16px 16px 16px;
+  margin-bottom: 16px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -14,6 +15,9 @@
 }
 
 .field__textarea {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
   padding: 16px;
   border: 0;
   background-color: $color-grey-200;
@@ -21,16 +25,43 @@
   color: $color-black;
 }
 
-// @media (min-width: $medium-width) {
-//   .field__textarea {
-//     width: 648px;
-//     height: 160px;
-//   }
-// }
+.field__input-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 58px;
+}
 
-// @media (min-width: $large-width) {
-//   .field__textarea {
-//     width: 768px;
-//     height: 160px;
-//   }
-// }
+.field__icon-phone {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background-color: $color-grey-125;
+}
+
+.field__icon-phone::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/icon-phone.svg");
+}
+
+.field__icon-email {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background-color: $color-grey-125;
+}
+
+.field__icon-email::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 12px;
+  background-image: url("../img/icon-mail.svg");
+}

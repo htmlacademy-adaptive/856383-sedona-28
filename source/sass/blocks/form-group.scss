@@ -11,7 +11,7 @@
 
 .form-group__item {
   padding: 0;
-  margin: 0 0 16px 0;
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -25,4 +25,10 @@
 
 .form-group__field {
   display: grid;
+}
+
+@media (min-width: $medium-width) {
+  .form-group__heading {
+    margin-bottom: 28px;
+  }
 }

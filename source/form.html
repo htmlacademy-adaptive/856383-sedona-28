@@ -86,90 +86,98 @@
               Контактная информация:
             </legend>
             <p class="form-group__item">
-              <label class="form-group__field field">
+              <label class="form-group__field field" for="phone">
                 <span class="field__name">Контактный телефон*:</span>
-                <input class="field__input" type="tel" name="contact-phone" placeholder="Введите телефон" required>
+                <div class="field__input-wrapper">
+                  <input class="field__input" id="phone" type="tel" name="contact-phone" placeholder="Введите телефон"
+                    required>
+                  <span class="field__icon-phone"></span>
+                </div>
               </label>
             </p>
             <p class="form-group__item">
-              <label class="form-group__field field">
+              <label class="form-group__field field" for="email">
                 <span class="field__name">Электронная почта*:</span>
-                <input class="field__input" type="email" name="email" placeholder="Введите e-mail" required>
+                <div class="field__input-wrapper">
+                  <input class="field__input" id="email" type="email" name="email" placeholder="Введите e-mail"
+                    required>
+                  <span class="field__icon-email"></span>
+                </div>
               </label>
             </p>
           </fieldset>
         </div>
-        <fieldset class="order-form__group form-impression">
-          <legend class="form-impression__heading">
+        <fieldset class="order-form__group form-selection-group">
+          <legend class="form-selection-group__heading">
             Ваше общее впечатление:
           </legend>
-          <ul class="form-impression__list">
-            <li class="form-impression__item">
-              <label class="form-impression__field radio">
+          <ul class="form-selection-group__list">
+            <li class="form-selection-group__item">
+              <label class="form-selection-group__field radio">
                 <input class="radio__input" type="radio" name="overall-impression" value="positive" checked>
                 Скорее положительное
               </label>
             </li>
-            <li class="form-impression__item">
-              <label class="form-impression__field radio">
+            <li class="form-selection-group__item">
+              <label class="form-selection-group__field radio">
                 <input class="radio__input" type="radio" name="overall-impression" value="negative">
                 Скорее отрицательное
               </label>
             </li>
-            <li class="form-impression__item">
-              <label class="form-impression__field radio">
+            <li class="form-selection-group__item">
+              <label class="form-selection-group__field radio">
                 <input class="radio__input" type="radio" name="overall-impression" value="undefined">
                 Затрудняюсь ответить
               </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="order-form__group form-attractions">
-          <legend class="form-attractions__heading">
-            Посещеные<br> достопримечательности:
+        <fieldset class="order-form__group form-selection-group">
+          <legend class="form-selection-group__heading">
+            Посещеные достопримечательности:
           </legend>
-          <ul class="form-attractions__list">
-            <li class="form-attractions__item">
-              <label class="form-attractions__field checkbox">
+          <ul class="form-selection-group__list">
+            <li class="form-selection-group__item">
+              <label class="form-selection-group__field checkbox">
                 <input class="checkbox__input" type="checkbox" name="devils-bridge" checked>
                 Мост Дьявола
               </label>
             </li>
-            <li class="form-attractions__item">
-              <label class="form-attractions__field checkbox">
+            <li class="form-selection-group__item">
+              <label class="form-selection-group__field checkbox">
                 <input class="checkbox__input" type="checkbox" name="The-Bell-Mountain" checked>
                 Гора-Колокол
               </label>
             </li>
-            <li class="form-attractions__item">
-              <label class="form-attractions__field checkbox">
+            <li class="form-selection-group__item">
+              <label class="form-selection-group__field checkbox">
                 <input class="checkbox__input" type="checkbox" name="Slide-Park" checked>
                 Слайд-парк
               </label>
             </li>
-            <li class="form-attractions__item">
-              <label class="form-attractions__field checkbox">
+            <li class="form-selection-group__item">
+              <label class="form-selection-group__field checkbox">
                 <input class="checkbox__input" type="checkbox" name="Red-Rocks">
                 Красные скалы
               </label>
             </li>
           </ul>
         </fieldset>
-          <fieldset class="order-form__group form-textarea">
-            <legend class="form-textarea__heading">
-              Опишите свои эмоции:
-            </legend>
-            <label class="form-textarea__field field">
-              <textarea class="field__textarea" name="text-feedback" rows="7"
-                placeholder="Опишите подробно все свои восторги "></textarea>
-            </label>
-            <div class="order-form__wrapper-button">
-              <button class="order-form__button button" type="submit">
-                Отправить отзыв
-              </button>
-              <span class="order-form__button-legend">* — обязательные поля</span>
-            </div>
-          </fieldset>
+        <fieldset class="order-form__group form-selection-group">
+          <legend class="form-selection-group__heading">
+            Опишите свои эмоции:
+          </legend>
+          <label class="form-selection-group__field field">
+            <textarea class="field__textarea" name="text-feedback" rows="4"
+              placeholder="Опишите подробно все свои восторги "></textarea>
+          </label>
+          <div class="order-form__wrapper-button">
+            <button class="order-form__button button" type="submit">
+              Отправить отзыв
+            </button>
+            <span class="order-form__button-legend">* — обязательные поля</span>
+          </div>
+        </fieldset>
 
       </form>
     </section>

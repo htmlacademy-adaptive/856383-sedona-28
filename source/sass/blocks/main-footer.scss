@@ -4,6 +4,10 @@
   justify-items: center;
 }
 
+.main-footer__social-list {
+  @include reset-list;
+}
+
 .main-footer__contact {
   font-weight: 700;
   font-size: 21px;

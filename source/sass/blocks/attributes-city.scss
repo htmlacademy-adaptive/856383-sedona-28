@@ -1,4 +1,5 @@
 .attributes-city__item {
+  position: relative;
   padding: 23px 18px 25px 65px;
   background-color: $color-white;
   text-align: left;
@@ -22,14 +23,73 @@
   text-transform: uppercase;
 }
 
+.attributes-city__item--home::before {
+  content: "";
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  top: 17px;
+  left: 19px;
+  background-image: url("../img/icon-house-small.svg");
+}
+
+.attributes-city__item--burger::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  top: 17px;
+  left: 19px;
+  background-image: url("../img/icon-burger-small.svg");
+}
+
+.attributes-city__item--souvenir::before {
+  content: "";
+  position: absolute;
+  width: 32px;
+  height: 38px;
+  top: 13px;
+  left: 22px;
+  background-image: url("../img/icon-gift-small.svg");
+}
+
 @media (min-width: $medium-width) {
   .attributes-city__item {
-    padding: 158px 33px 60px 33px;
+    display: grid;
+    justify-items: center;
+    padding: 60px 33px 60px 33px;
     text-align: center;
   }
 
+  .attributes-city__item--home::before {
+    position: initial;
+    width: 77px;
+    height: 72px;
+    top: 60px;
+    left: 35%;
+    background-image: url("../img/icon-house-medium.svg");
+  }
+
+  .attributes-city__item--burger::before {
+    position: initial;
+    width: 80px;
+    height: 68px;
+    top: 62px;
+    left: 35%;
+    background-image: url("../img/icon-burger-medium.svg");
+  }
+
+  .attributes-city__item--souvenir::before {
+    position: initial;
+    width: 66px;
+    height: 75px;
+    top: 64px;
+    left: 35%;
+    background-image: url("../img/icon-gift-medium.svg");
+  }
+
   .attributes-city__title {
-    margin: 0 0 30px 0;
+    margin: 26px 0 30px 0;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -42,12 +102,11 @@
 
 @media (min-width: $large-width) {
   .attributes-city__item {
-    padding: 169px 50px 69px 50px;
+    padding: 69px 50px 69px 50px;
     text-align: center;
   }
 
   .attributes-city__title {
-    margin: 0 0 30px 0;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;

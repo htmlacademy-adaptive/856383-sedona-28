@@ -1,5 +1,5 @@
 .order-form__group {
-  margin: 0 0 64px 0;
+  margin: 0;
   padding: 0;
   border: 0;
 }
@@ -16,10 +16,15 @@
 .order-form__wrapper-button {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .order-form__button-legend {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: rgba($color-grey-800, 30%);
   align-self: flex-end;
 }
 
@@ -59,7 +64,7 @@
   .order-form__wrapper-button {
     flex-direction: row;
     justify-content: space-between;
-    margin: 0;
+    margin-bottom: 64px;
   }
 
   .order-form__button {
@@ -68,6 +73,8 @@
 
   .order-form__button-legend {
     align-self: center;
+    font-size: 14px;
+    color: $color-grey-800;
   }
 }
 
