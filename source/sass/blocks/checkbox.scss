@@ -1,6 +1,32 @@
 .checkbox__input {
+  position: relative;
   width: 46px;
   height: 46px;
   background-color: $color-grey-200;
   border-radius: 4px;
+  opacity: 0;
+}
+
+.checkbox__icon:checked + label::before {
+  content: "";
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background-image: url("../img/checkbox.svg");
+}
+
+.checkbox__icon {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  background-color: $color-grey-200;
+  border-radius: 4px;
+}
+
+.checkbox__icon:hover {
+  background-color: $color-grey-150;
+}
+
+.checkbox__icon:active {
+  background-color: $color-grey-300;
 }
