@@ -1,12 +1,13 @@
 .attributes-city__item {
+  display: grid;
   position: relative;
-  padding: 23px 18px 25px 65px;
+  padding: 23px 18px 25px 18px;
   background-color: $color-white;
   text-align: left;
 }
 
 .attributes-city__title {
-  margin: 0 0 16px 0;
+  margin: 8px 0 16px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -15,7 +16,7 @@
 }
 
 .attributes-city__text {
-  margin: 0 0 33px 0;
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -25,32 +26,35 @@
 
 .attributes-city__item--home::before {
   content: "";
-  position: absolute;
-  width: 39px;
-  height: 37px;
-  top: 17px;
-  left: 19px;
-  background-image: url("../img/icon-house-small.svg");
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
 }
 
 .attributes-city__item--burger::before {
   content: "";
-  position: absolute;
   width: 40px;
-  height: 35px;
-  top: 17px;
-  left: 19px;
-  background-image: url("../img/icon-burger-small.svg");
+  height: 40px;
+  background-image: url("../img/icon-burger.svg");
 }
 
 .attributes-city__item--souvenir::before {
   content: "";
-  position: absolute;
-  width: 32px;
-  height: 38px;
-  top: 13px;
-  left: 22px;
-  background-image: url("../img/icon-gift-small.svg");
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icon-gift.svg");
+}
+
+@media (max-width: $small-width-only) {
+  .attributes-city__item {
+    grid-template-columns: max-content 1fr;
+    column-gap: 7px;
+  }
+
+  .attributes-city__text {
+    grid-column: 2/3;
+  }
 }
 
 @media (min-width: $medium-width) {
@@ -62,30 +66,27 @@
   }
 
   .attributes-city__item--home::before {
-    position: initial;
     width: 77px;
     height: 72px;
-    top: 60px;
-    left: 35%;
-    background-image: url("../img/icon-house-medium.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 
   .attributes-city__item--burger::before {
-    position: initial;
     width: 80px;
     height: 68px;
-    top: 62px;
-    left: 35%;
-    background-image: url("../img/icon-burger-medium.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 
   .attributes-city__item--souvenir::before {
-    position: initial;
     width: 66px;
     height: 75px;
-    top: 64px;
-    left: 35%;
-    background-image: url("../img/icon-gift-medium.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
   }
 
   .attributes-city__title {

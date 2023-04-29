@@ -5,8 +5,18 @@
   margin: 0 auto;
 }
 
+@media (min-width: $medium-width) {
+  .page__footer {
+    padding: 0 60px 0 60px;
+  }
+}
+
 @media (min-width: $large-width) {
   .page {
     background-color: $color-grey-200;
+  }
+
+  .page__footer {
+    padding: 0 120px 0 120px;
   }
 }
