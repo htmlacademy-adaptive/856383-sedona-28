@@ -1,8 +1,10 @@
 $filed-gradient: linear-gradient(to left, $color-grey-125 58px, $color-grey-200 58px);
+$filed-gradient-hover: linear-gradient(to left, $color-grey-125 58px, $color-grey-150 58px);
+$filed-gradient-focus: linear-gradient(to left, $color-grey-125 58px, $color-white 58px);
 
 .field__input {
   padding: 19px 16px 16px 16px;
-  margin-bottom: 16px;
+  margin: 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -36,16 +38,7 @@ $filed-gradient: linear-gradient(to left, $color-grey-125 58px, $color-grey-200 
   color: $color-black;
 }
 
-// [class*="field--icon"] .field__input {     <---   Почему то не работает
-//   padding-right: 76px;                            даже со звездочкой
-//   background-repeat: no-repeat;
-//   background-position:
-//     right 20px top 50%,
-//     0 0;
-// }
-
-.filed--icon-phone .field__input,
-.filed--icon-email .field__input {
+[class*="field--icon"] .field__input {
   padding-right: 76px;
   background-repeat: no-repeat;
   background-position:
@@ -53,18 +46,43 @@ $filed-gradient: linear-gradient(to left, $color-grey-125 58px, $color-grey-200 
     0 0;
 }
 
-.filed--icon-phone .field__input {
+
+.field--icon-phone .field__input {
   background-image:
     url("../img/icon-phone.svg"),
     $filed-gradient;
 }
 
-.filed--icon-email .field__input {
+.field--icon-phone .field__input:hover {
+  background-image:
+    url("../img/icon-phone.svg"),
+    $filed-gradient-hover;
+}
+
+.field--icon-phone .field__input:focus {
+  background-image:
+    url("../img/icon-phone.svg"),
+    $filed-gradient-focus;
+}
+
+
+.field--icon-email .field__input {
   background-image:
     url("../img/icon-mail.svg"),
     $filed-gradient;
 }
 
+.field--icon-email .field__input:hover {
+  background-image:
+    url("../img/icon-mail.svg"),
+    $filed-gradient-hover;
+}
+
+.field--icon-email .field__input:focus {
+  background-image:
+    url("../img/icon-mail.svg"),
+    $filed-gradient-focus;
+}
 
 @media (min-width: $medium-width) {
   .field__textarea {

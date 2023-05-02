@@ -12,6 +12,8 @@
   width: 48px;
   height: 48px;
   background-color: $color-blue-200;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .social__link::before {
@@ -31,19 +33,13 @@
 }
 
 .social__link--vkontakte {
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: url("../img/icon-vk.svg");
 }
 
 .social__link--telegram {
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: url("../img/icon-tg.svg");
 }
 
 .social__link--youtube {
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: url("../img/icon-youtube.svg");
 }
