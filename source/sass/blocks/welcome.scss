@@ -1,8 +1,20 @@
 .welcome {
   background-image:
-    url("../img/decor-welcome-block.svg"),
+    url("../img/decor-welcome.svg"),
     url("../img/image-welcome-block.png");
   background-repeat: no-repeat;
-  background-position: 0 97%, 0 0;
-  padding: 92px 19px 87px 19px;
+  background-size: auto, cover;
+  background-position: center bottom, 0 0;
+}
+
+.welcome__image {
+  padding: 92px 0 87px 0;
+  display: block;
+  margin: 0 auto;
+}
+
+.welcome__sedona-image {
+  padding: 52px 0 67px 0;
+  display: block;
+  margin: 0 auto;
 }

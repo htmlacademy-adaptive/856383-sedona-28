@@ -1,4 +1,19 @@
 .feedback-form {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 0 20px;
+  gap: 49px;
+}
+
+@media (min-width: $medium-width) {
+  .feedback-form {
+    padding: 0 60px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .feedback-form {
+    padding: 0 120px;
+    gap: 56px;
+  }
 }

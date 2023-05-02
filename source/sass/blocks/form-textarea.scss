@@ -1,0 +1,35 @@
+.form-textarea__heading {
+  position: relative;
+  padding: 0;
+  margin-bottom: 28px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $color-black;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+
+@media (min-width: $medium-width) {
+  .form-textarea__heading::after,
+  .form-textarea__heading::before {
+    content: "";
+    height: 1px;
+    background-color: $color-grey-250;
+  }
+
+  .form-textarea__heading {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 123px 1fr 123px;
+    gap: 62px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .form-textarea__heading {
+    grid-template-columns: 280px 1fr 280px;
+  }
+}

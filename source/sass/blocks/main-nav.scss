@@ -7,22 +7,20 @@
   @include reset-list;
   display: grid;
   grid-template-columns: 1fr;
-  position: absolute;
-  top: 0;
-  width: 100%;
 }
 
 .main-nav__toggle {
   position: relative;
   margin-left: auto;
-  margin-top: 17px;
-  margin-bottom: 17px;
+  margin-top: 26px;
+  margin-bottom: 26px;
   margin-right: 20px;
   width: 23px;
   height: 23px;
   z-index: 1;
   cursor: pointer;
   border: none;
+  background-color: transparent;
 }
 
 

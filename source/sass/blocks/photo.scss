@@ -13,6 +13,13 @@
   margin: 15px 0 50px 0;
 }
 
+@media (max-width: $small-width-only) {
+  .photo__item {
+    padding-top: 22px;
+    border-top: 2px $color-grey-150 solid;
+  }
+}
+
 @media (min-width: $medium-width) {
   .photo__list {
     display: grid;

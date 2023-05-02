@@ -16,17 +16,38 @@
 }
 
 .description-photo__like {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  align-items: baseline;
+  gap: 14px;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
   color: $color-black;
 }
 
+.description-photo__like::before {
+  content: "";
+  width: 23px;
+  height: 21px;
+  background-image: url("../img/like-icon.svg");
+}
+
 .description-photo__wrapper {
   margin: 0 0 11px 0;
 }
 
+@media (min-width: $medium-width) {
+  .description-photo__like {
+    gap: 9px;
+  }
+}
+
 @media (min-width: $large-width) {
+  .description-photo__like::before {
+    background-image: url("../img/like-icon-white.svg");
+  }
+
   .description-photo__title {
     color: $color-white;
   }

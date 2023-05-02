@@ -1,11 +1,13 @@
 .attributes-city__item {
-  padding: 23px 18px 25px 65px;
+  display: grid;
+  position: relative;
+  padding: 23px 18px 25px 18px;
   background-color: $color-white;
   text-align: left;
 }
 
 .attributes-city__title {
-  margin: 0 0 16px 0;
+  margin: 8px 0 16px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -14,7 +16,7 @@
 }
 
 .attributes-city__text {
-  margin: 0 0 33px 0;
+  margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -22,14 +24,73 @@
   text-transform: uppercase;
 }
 
+.attributes-city__item--home::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icon-house.svg");
+  background-repeat: no-repeat;
+}
+
+.attributes-city__item--burger::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icon-burger.svg");
+}
+
+.attributes-city__item--souvenir::before {
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/icon-gift.svg");
+}
+
+@media (max-width: $small-width-only) {
+  .attributes-city__item {
+    grid-template-columns: max-content 1fr;
+    column-gap: 7px;
+  }
+
+  .attributes-city__text {
+    grid-column: 2/3;
+  }
+}
+
 @media (min-width: $medium-width) {
   .attributes-city__item {
-    padding: 158px 33px 60px 33px;
+    display: grid;
+    justify-items: center;
+    padding: 60px 33px 60px 33px;
     text-align: center;
   }
 
+  .attributes-city__item--home::before {
+    width: 77px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .attributes-city__item--burger::before {
+    width: 80px;
+    height: 68px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .attributes-city__item--souvenir::before {
+    width: 66px;
+    height: 75px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
   .attributes-city__title {
-    margin: 0 0 30px 0;
+    margin: 26px 0 30px 0;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
@@ -42,12 +103,11 @@
 
 @media (min-width: $large-width) {
   .attributes-city__item {
-    padding: 169px 50px 69px 50px;
+    padding: 69px 50px 69px 50px;
     text-align: center;
   }
 
   .attributes-city__title {
-    margin: 0 0 30px 0;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
