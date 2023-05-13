@@ -1,10 +1,10 @@
 .welcome {
   background-image:
     url("../img/decor-welcome.svg"),
-    url("../img/image-welcome-block.png");
+    url("../img/back-mobile.jpg");
   background-repeat: no-repeat;
   background-size: auto, cover;
-  background-position: center bottom, 0 0;
+  background-position: center bottom, center 0;
 }
 
 .welcome__image {
@@ -18,3 +18,12 @@
   display: block;
   margin: 0 auto;
 }
+
+// @media (min-width: $medium-width) {
+//   .welcome {
+//     background-image:
+//       url("../img/back-desktop.jpg"),
+//       url("../img/decor-welcome.svg");
+//     background-position: center 0, center bottom;
+//   }
+// }

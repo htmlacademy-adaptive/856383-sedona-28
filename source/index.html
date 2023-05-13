@@ -46,8 +46,12 @@
       <h1 class="visually-hidden">
         Добро пожаловать в Седону
       </h1>
-      <img class="welcome__image" src="img/text-welcome-sedona-index.svg" width="282" height="214"
-        alt="Welcome tothe gorgeous Sedona Because the Grand Canyon sucrs">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/text-welcome-sedona-index-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/text-welcome-sedona-index-tablet.svg">
+        <img class="welcome__image" src="img/text-welcome-sedona-index.svg" width="282" height="214"
+          alt="Welcome tothe gorgeous Sedona Because the Grand Canyon sucrs">
+      </picture>
     </div>
     <section class="main-container__introduction introduction">
       <h2 class="visually-hidden">
@@ -77,7 +81,11 @@
               Седона - не аттракцион для туристов, там течёт своя жизнь
             </p>
           </div>
-          <img class="advantages__image" src="img/open-range.png" width="320" height="260" alt="Open Range на фоне гор">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/open-range-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/open-range-tablet.jpg">
+            <img class="advantages__image" src="img/open-range-phone.jpg" width="320" height="260" alt="Open Range на фоне гор">
+          </picture>
           <ul class="advantages__list attributes-city">
             <li class="attributes-city__item attributes-city__item--home">
               <h4 class="attributes-city__title">
@@ -106,8 +114,12 @@
           </ul>
         </li>
         <li class="advantages__item advantages__item--content-grid">
-          <img class="advantages__image" src="img/devil-bridge.png" width="320" height="260"
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/devil-bridge-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/devil-bridge-tablet.jpg">
+            <img class="advantages__image" src="img/devil-bridge-phone.jpg" width="320" height="260"
             alt="Мост дьявола на фоне гор">
+          </picture>
           <div class="advantages__wrapper-discription advantages__wrapper-discription--devil-bridge">
             <h3 class="advantages__title">
               Там есть мост дьявола

@@ -46,6 +46,13 @@
   text-transform: uppercase;
 }
 
+@media (max-width: $small-width-only) {
+  .advantages__image {
+    width: 100%;
+    display: block;
+  }
+}
+
 @media (min-width: $medium-width) {
   .advantages__list {
     display: grid;
