@@ -1,10 +1,18 @@
-.welcome {
-  background-image:
-    url("../img/decor-welcome.svg"),
-    url("../img/image-welcome-block.png");
-  background-repeat: no-repeat;
-  background-size: auto, cover;
-  background-position: center bottom, 0 0;
+@media (max-width: $small-width-only) {
+  .welcome {
+    background-image:
+      url("../img/decor-welcome.svg"),
+      url("../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: center bottom, center 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/decor-welcome.svg"),
+        url("../img/back-mobile@2x.jpg");
+    }
+  }
 }
 
 .welcome__image {
@@ -17,4 +25,23 @@
   padding: 52px 0 67px 0;
   display: block;
   margin: 0 auto;
+}
+
+@media (min-width: $medium-width) {
+  .welcome {
+    background-image: url("../img/decor-welcome.svg"), url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: center bottom, center 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/decor-welcome.svg"), url("../img/back-desktop@2x.jpg");
+    }
+  }
+
+  .welcome__image {
+    padding: 68px 0 87px 0;
+    width: 461px;
+    height: 350px;
+  }
 }

@@ -1,22 +1,22 @@
 .photo__list {
   @include reset-list;
-  position: relative;
   margin: 0 20px;
   display: grid;
 }
 
 .photo__image {
   display: block;
-}
-
-.photo__wrapper {
-  margin: 15px 0 50px 0;
+  width: 100%;
 }
 
 @media (max-width: $small-width-only) {
   .photo__item {
     padding-top: 22px;
     border-top: 2px $color-grey-150 solid;
+  }
+
+  .photo__wrapper {
+    margin: 15px 0 50px 0;
   }
 }
 
@@ -40,7 +40,7 @@
   }
 
   .photo__wrapper {
-    padding: 22px 20px 15px 21px;
+    padding: 22px 20px 11px 21px;
     background-color: $color-grey-200;
   }
 }
@@ -50,18 +50,17 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .photo__item:first-child {
-    grid-column: 1/-1;
+  .photo__item {
+    position: relative;
   }
 
   .photo__wrapper {
-    position: relative;
-    padding: 22px 20px 15px 21px;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 22px 20px 11px 21px;
     background-color: rgba($color-black, 0.3);
-  }
-
-  .photo__image {
-    top: 84px;
-    position: relative;
   }
 }
