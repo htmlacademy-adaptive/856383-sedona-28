@@ -11,7 +11,6 @@
       background-image:
         url("../img/decor-welcome.svg"),
         url("../img/back-mobile@2x.jpg");
-      background-position: center bottom, center 0;
     }
   }
 }
@@ -37,7 +36,6 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/decor-welcome.svg"), url("../img/back-desktop@2x.jpg");
-      background-size: auto, cover;
     }
   }
 
