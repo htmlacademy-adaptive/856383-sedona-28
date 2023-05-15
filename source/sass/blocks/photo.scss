@@ -57,8 +57,9 @@
   .photo__wrapper {
     position: absolute;
     z-index: 1;
-    width: 100%;
     bottom: 0;
+    left: 0;
+    right: 0;
     padding: 22px 20px 11px 21px;
     background-color: rgba($color-black, 0.3);
   }

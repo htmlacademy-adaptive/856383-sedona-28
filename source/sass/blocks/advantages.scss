@@ -60,6 +60,20 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .advantages__wrapper-image-open-range {
+    grid-column: 2/4;
+  }
+
+  .advantages__wrapper-image-devil-bridge {
+    grid-column: 1/3;
+  }
+
+  .advantages__image {
+    display: block;
+    width: 100%;
+    height: 256px;
+  }
+
   .advantages__title {
     margin: 0 0 16px 0;
     font-size: 21px;

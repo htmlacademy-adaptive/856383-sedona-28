@@ -1,10 +1,19 @@
-.welcome {
-  background-image:
-    url("../img/decor-welcome.svg"),
-    url("../img/back-mobile.jpg");
-  background-repeat: no-repeat;
-  background-size: auto, cover;
-  background-position: center bottom, center 0;
+@media (max-width: $small-width-only) {
+  .welcome {
+    background-image:
+      url("../img/decor-welcome.svg"),
+      url("../img/back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: center bottom, center 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image:
+        url("../img/decor-welcome.svg"),
+        url("../img/back-mobile@2x.jpg");
+      background-position: center bottom, center 0;
+    }
+  }
 }
 
 .welcome__image {
@@ -19,11 +28,22 @@
   margin: 0 auto;
 }
 
-// @media (min-width: $medium-width) {
-//   .welcome {
-//     background-image:
-//       url("../img/back-desktop.jpg"),
-//       url("../img/decor-welcome.svg");
-//     background-position: center 0, center bottom;
-//   }
-// }
+@media (min-width: $medium-width) {
+  .welcome {
+    background-image: url("../img/decor-welcome.svg"), url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: auto, cover;
+    background-position: center bottom, center 0;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/decor-welcome.svg"), url("../img/back-desktop@2x.jpg");
+      background-size: auto, cover;
+    }
+  }
+
+  .welcome__image {
+    padding: 68px 0 87px 0;
+    width: 461px;
+    height: 350px;
+  }
+}

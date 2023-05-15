@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -63,7 +65,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/not-native-spaces-desktop.jpg 1x, img/not-native-spaces-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/not-native-spaces-tablet.jpg 1x, img/not-native-spaces-tablet@2x.jpg 2x">
-            <img class="photo__image" src="img/not-native-spaces.jpg" width="280" height="280" alt="неродные просторы">
+            <img class="photo__image" src="img/not-native-spaces.jpg 1x" srcset="img/not-native-spaces@2x.jpg 2x" width="280" height="280" alt="неродные просторы">
           </picture>
           <div class="photo__wrapper description-photo">
             <div class="description-photo__wrapper">
@@ -82,9 +84,8 @@
         <li class="photo__item">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/local-vegetation-desktop.jpg 1x, img/local-vegetation-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/local-vegetation-tablet.jpg 1x, img/local-vegetation-tablet@2x.jpg 2x">
-            <img class="photo__image" src="img/local-vegetation.jpg" width="280" height="280"
-              alt="местная растительность">
+            <source media="(min-width: 768px)" srcset="img/local-vegetation-tablet.jpg 1x, img/local-vegetation-table@2x.jpg 2x">
+            <img class="photo__image" src="img/local-vegetation.jpg 1x" srcset="img/local-vegetation@2x.jpg 2x" width="280" height="280" alt="местная растительность">
           </picture>
           <div class="photo__wrapper description-photo">
             <div class="description-photo__wrapper">
@@ -104,7 +105,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/road-to-the-north-desktop.jpg 1x, img/road-to-the-north-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/road-to-the-north-tablet.jpg 1x, img/road-to-the-north-tablet@2x.jpg 2x">
-            <img class="photo__image" src="img/road-to-the-north.jpg" width="280" height="280" alt="дорога на север">
+            <img class="photo__image" src="img/road-to-the-north.jpg 1x" srcset="img/road-to-the-north@2x.jpg 2x" width="280" height="280" alt="дорога на север">
           </picture>
           <div class="photo__wrapper description-photo">
             <div class="description-photo__wrapper">
@@ -124,7 +125,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/devil-bridge-catalog-desktop.jpg 1x, img/devil-bridge-catalog-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/devil-bridge-catalog-tablet.jpg 1x, img/devil-bridge-catalog-tablet@2x.jpg 2x">
-            <img class="photo__image" src="img/devil-bridge-catalog-phone.jpg" width="280" height="280" alt="мост дьявола">
+            <img class="photo__image" src="img/devil-bridge-catalog-phone.jpg 1x" srcset="img/devil-bridge-catalog-phone@2x.jpg 2x" width="280" height="280" alt="мост дьявола">
           </picture>
           <div class="photo__wrapper description-photo">
             <div class="description-photo__wrapper">
@@ -155,9 +156,11 @@
         </p>
       </header>
       <figure class="video__clip">
-        <source media="(min-width: 1200px)" srcset="img/video-mobile-desktop.jpg 1x, img/video-mobile-desktop@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="img/video-mobile-tablet.jpg 1x, img/video-mobile-tablet@2x.jpg 2x">
-        <img class="video__clip-image" src="img/video-mobile.jpg" width="280" height="170" alt="Видеопрезентация">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img class="video__clip-image" src="img/video-mobile.jpg 1x" width="280" height="170" alt="Видеопрезентация">
+        </picture>
         <a href="#">
           <span class="visually-hidden">
             Смотреть видеопрезентацию
