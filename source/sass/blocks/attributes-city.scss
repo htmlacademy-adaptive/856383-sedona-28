@@ -28,7 +28,7 @@
   content: "";
   width: 40px;
   height: 40px;
-  background-image: url("../img/icon-house.svg");
+  background-image: url("../img/sprite.svg#icon-house");
   background-repeat: no-repeat;
 }
 
@@ -36,14 +36,16 @@
   content: "";
   width: 40px;
   height: 40px;
-  background-image: url("../img/icon-burger.svg");
+  background-image: url("../img/sprite.svg#icon-burger");
+  background-repeat: no-repeat;
 }
 
 .attributes-city__item--souvenir::before {
   content: "";
   width: 40px;
   height: 40px;
-  background-image: url("../img/icon-gift.svg");
+  background-image: url("../img/sprite.svg#icon-gift");
+  background-repeat: no-repeat;
 }
 
 @media (max-width: $small-width-only) {
