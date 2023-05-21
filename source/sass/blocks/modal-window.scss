@@ -1,5 +1,10 @@
+.modal-window {
+  display: grid;
+  justify-items: center;
+}
+
 .modal-window__title {
-  margin: 0;
+  margin: 45px 0 35px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -8,10 +13,17 @@
 }
 
 .modal-window__text {
-  margin: 0;
+  margin: 0 41px 28px 41px;
+  text-align: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: $color-grey-800;
   text-transform: uppercase;
+}
+
+.modal-window__button {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 18px 60px 14px 62px;
 }
