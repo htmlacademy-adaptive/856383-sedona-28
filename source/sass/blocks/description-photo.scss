@@ -30,7 +30,7 @@
   content: "";
   width: 23px;
   height: 21px;
-  background-image: url("../img/like-icon.svg");
+  background-image: url("../img/sprite.svg#like-icon");
 }
 
 .description-photo__wrapper {
@@ -45,7 +45,7 @@
 
 @media (min-width: $large-width) {
   .description-photo__like::before {
-    background-image: url("../img/like-icon-white.svg");
+    background-image: url("../img/sprite.svg#like-icon-white");
   }
 
   .description-photo__title {

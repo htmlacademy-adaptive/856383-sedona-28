@@ -1,8 +1,8 @@
 @media (max-width: $small-width-only) {
-  .welcome {
+  .welcome-inner {
     background-image:
       url("../img/decor-welcome.svg"),
-      url("../img/back-mobile.jpg");
+      url("../img/back-mobile-inner.jpg");
     background-repeat: no-repeat;
     background-size: auto, cover;
     background-position: center bottom, center 0;
@@ -10,26 +10,26 @@
     @media (min-resolution: 2dppx) {
       background-image:
         url("../img/decor-welcome.svg"),
-        url("../img/back-mobile@2x.jpg");
+        url("../img/back-mobile-inner@2x.jpg");
     }
   }
 }
 
-.welcome__image {
-  padding: 92px 0 87px 0;
+.welcome-inner__sedona-image {
+  padding: 52px 0 67px 0;
   display: block;
   margin: 0 auto;
 }
 
 @media (min-width: $medium-width) {
-  .welcome {
-    background-image: url("../img/decor-welcome.svg"), url("../img/back-desktop.jpg");
+  .welcome-inner {
+    background-image: url("../img/decor-welcome.svg"), url("../img/back-desktop-inner.jpg");
     background-repeat: no-repeat;
     background-size: auto, cover;
     background-position: center bottom, center 0;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../img/decor-welcome.svg"), url("../img/back-desktop@2x.jpg");
+      background-image: url("../img/decor-welcome.svg"), url("../img/back-desktop-inner@2x.jpg");
     }
   }
 

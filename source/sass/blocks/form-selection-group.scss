@@ -13,10 +13,16 @@
 
 .form-selection-group__list-radio {
   @include reset-list;
+  display: grid;
+  justify-content: center;
+  gap: 16px;
 }
 
 .form-selection-group__list-checkbox {
   @include reset-list;
+  display: grid;
+  justify-content: center;
+  gap: 16px;
 }
 
 .form-selection-group__field {

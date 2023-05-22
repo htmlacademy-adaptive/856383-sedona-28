@@ -24,6 +24,7 @@
   .photo__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin: 0 60px;
   }
 
   .photo__item:first-child {
