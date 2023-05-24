@@ -51,3 +51,9 @@
     margin: 0 60px;
   }
 }
+
+@media (min-width: $medium-width) {
+  .video__clip-image {
+    width: 800px;
+  }
+}
