@@ -13,12 +13,18 @@ $filed-gradient-focus: linear-gradient(to left, $color-grey-125 58px, $color-whi
   border: 0;
 }
 
+.field__input::placeholder {
+  color: $color-black;
+  opacity: 0.3;
+}
+
 .field__input:hover {
   background-color: $color-grey-150;
 }
 
 .field__input:focus {
   background-color: $color-white;
+  outline: 4px solid $color-grey-150;
 }
 
 .field__name {
@@ -27,6 +33,7 @@ $filed-gradient-focus: linear-gradient(to left, $color-grey-125 58px, $color-whi
 }
 
 .field__textarea {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -35,7 +42,11 @@ $filed-gradient-focus: linear-gradient(to left, $color-grey-125 58px, $color-whi
   border: 0;
   background-color: $color-grey-200;
   width: 100%;
+}
+
+.field__textarea::placeholder {
   color: $color-black;
+  opacity: 0.3;
 }
 
 [class*="field--icon"] .field__input {

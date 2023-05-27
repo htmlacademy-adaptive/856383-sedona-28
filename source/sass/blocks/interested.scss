@@ -4,7 +4,7 @@
 
 .interested__title {
   margin: 0;
-  padding: 38px 0 24px 0;
+  padding: 45px 0 24px 0;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -24,4 +24,20 @@
 .interested__button {
   padding: 16px 0;
   margin: 0 0 49px 0;
+}
+
+
+@media (min-width: $medium-width) {
+  .interested__title {
+    padding: 60px 0 34px 0;
+    font-size: 30px;
+  }
+
+  .interested__text {
+    padding-bottom: 43px;
+  }
+
+  .interested__button {
+    margin: 0 0 55px 0;
+  }
 }

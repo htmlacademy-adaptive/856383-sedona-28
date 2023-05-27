@@ -23,7 +23,7 @@ export const styles = () => {
       autoprefixer(), csso()
     ]))
     .pipe(rename('style.min.css'))
-    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
@@ -101,7 +101,7 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'source'  // build не забудь переписать
     },
     cors: true,
     notify: false,

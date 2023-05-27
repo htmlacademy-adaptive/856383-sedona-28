@@ -27,6 +27,7 @@
     background-repeat: no-repeat;
     background-size: auto, cover;
     background-position: center bottom, center 0;
+    background-color: $color-blue-300;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/decor-welcome.svg"), url("../img/back-desktop-inner@2x.jpg");
@@ -37,5 +38,20 @@
     padding: 68px 0 87px 0;
     width: 461px;
     height: 350px;
+  }
+
+  .welcome-inner__sedona-image {
+    padding: 94px 0 117px 0;
+    width: 457px;
+    height: 78px;
+  }
+}
+
+
+@media (min-width: $large-width) {
+  .welcome-inner__sedona-image {
+    padding: 104px 0 117px 0;
+    width: 457px;
+    height: 78px;
   }
 }
