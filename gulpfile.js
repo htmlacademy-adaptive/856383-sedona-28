@@ -101,7 +101,7 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'build'  // build не забудь переписать
     },
     cors: true,
     notify: false,

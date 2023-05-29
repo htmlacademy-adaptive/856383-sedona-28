@@ -1,7 +1,12 @@
+.attributes-city {
+  padding: 23px 18px 21px 18px;
+}
+
+
 .attributes-city__item {
   display: grid;
   position: relative;
-  padding: 23px 18px 25px 18px;
+  padding-bottom: 26px;
   background-color: $color-white;
   text-align: left;
 }
@@ -57,19 +62,27 @@
   .attributes-city__text {
     grid-column: 2/3;
   }
+
+  br {
+    display: none;
+  }
 }
 
 @media (min-width: $medium-width) {
+  .attributes-city {
+    padding: 0;
+  }
+
   .attributes-city__item {
     display: grid;
     justify-items: center;
-    padding: 60px 33px 60px 33px;
+    padding: 59px 0 55px 0;
     text-align: center;
   }
 
   .attributes-city__item--home::before {
-    width: 77px;
-    height: 72px;
+    width: 84px;
+    height: 79px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -77,29 +90,29 @@
 
   .attributes-city__item--burger::before {
     width: 80px;
-    height: 68px;
+    height: 78px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
 
   .attributes-city__item--souvenir::before {
-    width: 66px;
-    height: 75px;
+    width: 87px;
+    height: 83px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
   }
 
   .attributes-city__title {
-    margin: 26px 0 30px 0;
+    margin: 18px 0 27px 0;
     font-weight: 700;
     font-size: 21px;
     line-height: 26px;
   }
 
   .attributes-city__text {
-    margin: 0;
+    margin: 0 38px;
   }
 }
 

@@ -8,9 +8,10 @@
 
 .checkbox__icon {
   display: grid;
-  grid-template-columns: 46px 1fr;
+  grid-template-columns: 46px max-content;
   align-items: center;
   gap: 16px;
+  margin-right: 64px;
 }
 
 
@@ -46,4 +47,11 @@
 
 .checkbox__input:active[type="checkbox"]:checked + .checkbox__icon::after {
   opacity: 0.3;
+}
+
+
+@media (min-width: $medium-width) {
+  .checkbox__icon {
+    margin-right: 0;
+  }
 }

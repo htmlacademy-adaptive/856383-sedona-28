@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-size: auto, cover;
     background-position: center bottom, center 0;
+    background-color: $color-blue-300;
 
     @media (min-resolution: 2dppx) {
       background-image:
@@ -16,7 +17,7 @@
 }
 
 .welcome__image {
-  padding: 92px 0 87px 0;
+  padding: 89px 0 87px 0;
   display: block;
   margin: 0 auto;
 }
@@ -34,7 +35,7 @@
   }
 
   .welcome__image {
-    padding: 68px 0 87px 0;
+    padding: 76px 0 91px 0;
     width: 461px;
     height: 350px;
   }

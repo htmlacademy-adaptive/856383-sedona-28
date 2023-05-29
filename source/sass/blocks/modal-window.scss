@@ -1,6 +1,16 @@
 .modal-window {
+  width: 320px;
   display: grid;
   justify-items: center;
+  margin: 0 auto;
+}
+
+.modal-window--sent {
+  width: 320px;
+  display: grid;
+  justify-items: center;
+  background-image: linear-gradient(to top, $color-grey-200 100px, $color-white 100px);
+  margin: 0 auto;
 }
 
 .modal-window__title {
@@ -25,5 +35,34 @@
 .modal-window__button {
   font-size: 18px;
   line-height: 26px;
-  padding: 18px 60px 14px 62px;
+  padding: 18px 64px 14px 63px;
+}
+
+.modal-window__button-sent {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 18px 62px 14px 60px;
+  margin: 20px;
+}
+
+
+@media (min-width: $medium-width) {
+  .modal-window {
+    width: 400px;
+  }
+
+  .modal-window--sent {
+    width: 640px;
+    background-image: linear-gradient(to top, $color-grey-200 154px, $color-white 154px);
+  }
+
+  .modal-window__button-sent {
+    font-size: 21px;
+    padding: 18px 140px 14px 140px;
+    margin: 44px 91px;
+  }
+
+  .modal-window__text {
+    margin: 0 108px 28px 108px;
+  }
 }

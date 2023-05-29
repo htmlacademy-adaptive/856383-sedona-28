@@ -9,7 +9,7 @@
   line-height: 26px;
   color: $color-black;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 }
 
 .introduction__text {
@@ -28,15 +28,28 @@
   line-height: 26px;
   color: $color-black;
   text-transform: uppercase;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $medium-width) {
   .introduction__title {
     font-size: 30px;
+    margin-bottom: 19px;
   }
 
+  .introduction__text {
+    margin: 0 39px;
+  }
+
+
   .introduction__title-text {
+    margin: 0 0 29px 0;
     font-size: 21px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .introduction__title {
+    margin-bottom: 31px;
   }
 }

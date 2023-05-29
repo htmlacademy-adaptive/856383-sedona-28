@@ -1,7 +1,15 @@
+.form-selection-group {
+  margin: 0 0 55px;
+}
+
+.form-selection-group:last-child {
+  margin: 0;
+}
+
 .form-selection-group__heading {
   position: relative;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -13,6 +21,7 @@
 
 .form-selection-group__list-radio {
   @include reset-list;
+  margin-right: 32px;
   display: grid;
   justify-content: center;
   gap: 16px;
@@ -20,12 +29,14 @@
 
 .form-selection-group__list-checkbox {
   @include reset-list;
+  margin-right: 32px;
   display: grid;
   justify-content: center;
   gap: 16px;
 }
 
 .form-selection-group__field {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -35,6 +46,10 @@
 }
 
 @media (min-width: $medium-width) {
+  .form-selection-group {
+    margin: 0 0 48px;
+  }
+
   .form-selection-group__heading::after,
   .form-selection-group__heading::before {
     content: "";
@@ -43,41 +58,57 @@
   }
 
   .form-selection-group__heading {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
     display: grid;
     align-items: center;
     grid-template-columns: 123px 1fr 123px;
     gap: 62px;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
   }
 
   .form-selection-group__list-radio {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    justify-items: start;
+    grid-template-columns: repeat(2, 280px);
+    margin: 0;
+    gap: 15px;
   }
 
   .form-selection-group__list-checkbox {
-    display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    grid-template-columns: repeat(2, 224px);
     column-gap: 32px;
     row-gap: 16px;
+    margin: 0;
   }
 }
 
 @media (min-width: $large-width) {
-  .form-selection-group__list-radio {
+  .form-selection-group {
+    margin: 0 0 17px;
+  }
 
+  .form-selection-group__field {
+    justify-content: center;
+  }
+
+
+  .form-selection-group__list-radio {
+    margin-left: 54px;
     grid-template-columns: repeat(3, 1fr);
   }
 
   .form-selection-group__list-checkbox {
+    margin-left: 45px;
+    margin-top: 12px;
+    margin-bottom: 14px;
     grid-template-columns: repeat(4, 1fr);
   }
 
   .form-selection-group__heading {
     grid-template-columns: 280px 1fr 280px;
     gap: 62px;
+    margin-bottom: 47px;
   }
 }

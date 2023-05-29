@@ -7,16 +7,17 @@
 .photo__image {
   display: block;
   width: 100%;
+  background-color: $color-brown-300;
 }
 
 @media (max-width: $small-width-only) {
   .photo__item {
-    padding-top: 22px;
+    padding-top: 25px;
     border-top: 2px $color-grey-150 solid;
   }
 
   .photo__wrapper {
-    margin: 15px 0 50px 0;
+    margin: 15px 0 23px 0;
   }
 }
 
@@ -38,10 +39,11 @@
 
   .description-photo__like {
     margin-left: auto;
+    margin-bottom: 16px;
   }
 
   .photo__wrapper {
-    padding: 22px 20px 11px 21px;
+    padding: 22px 20px 7px 21px;
     background-color: $color-grey-200;
   }
 }
@@ -49,6 +51,7 @@
 @media (min-width: $large-width) {
   .photo__list {
     grid-template-columns: repeat(3, 1fr);
+    margin: 0;
   }
 
   .photo__item {
@@ -61,7 +64,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 22px 20px 11px 21px;
+    padding: 22px 20px 4px 21px;
     background-color: rgba($color-black, 0.3);
   }
 }

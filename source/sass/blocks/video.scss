@@ -7,7 +7,7 @@
 }
 
 .video__title {
-  margin: 0 0 26px 0;
+  margin: 21px 0 26px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -36,6 +36,7 @@
 @media (min-width: $medium-width) {
   .video__title {
     font-size: 30px;
+    margin: 21px 0 29px 0;
   }
 
   .video__text {
@@ -44,16 +45,33 @@
   }
 
   .video__header {
-    margin: 57px 161px 65px 161px;
+    margin: 54px 161px 88px 161px;
   }
 
   .video__clip {
-    margin: 0 60px;
+    margin: 0 60px 36px 60px;
   }
 }
 
 @media (min-width: $medium-width) {
   .video__clip-image {
     width: 800px;
+  }
+
+  .video__header {
+    margin: 59px 161px 88px 161px;
+  }
+
+  .video__title {
+    font-size: 30px;
+    margin: 21px 0 33px 0;
+  }
+
+  .video__text {
+    margin: 0 208px;
+  }
+
+  .video__clip {
+    margin: 0 60px 78px 60px;
   }
 }

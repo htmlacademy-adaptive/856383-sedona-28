@@ -7,9 +7,23 @@
 .main-container__introduction {
   max-width: 520px;
   margin: 0 auto;
-  padding: 32px 18px 32px 18px;
+  padding: 35px 13px 50px 13px;
 }
 
 .main-container__video {
   margin: 0 auto;
+}
+
+
+@media (min-width: $medium-width) {
+  .main-container__introduction {
+    padding: 67px 18px 107px 18px;
+  }
+}
+
+
+@media (min-width: $large-width) {
+  .main-container__introduction {
+    padding: 116px 18px 68px 18px;
+  }
 }
