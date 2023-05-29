@@ -34,7 +34,7 @@
 @media (min-width: $medium-width) {
   .introduction__title {
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 19px;
   }
 
   .introduction__text {
@@ -45,5 +45,11 @@
   .introduction__title-text {
     margin: 0 0 29px 0;
     font-size: 21px;
+  }
+}
+
+@media (min-width: $large-width) {
+  .introduction__title {
+    margin-bottom: 31px;
   }
 }

@@ -7,7 +7,7 @@
 .main-container__introduction {
   max-width: 520px;
   margin: 0 auto;
-  padding: 32px 24px 43px 24px;
+  padding: 35px 13px 50px 13px;
 }
 
 .main-container__video {
@@ -17,13 +17,13 @@
 
 @media (min-width: $medium-width) {
   .main-container__introduction {
-    padding: 67px 18px 81px 18px;
+    padding: 67px 18px 107px 18px;
   }
 }
 
 
 @media (min-width: $large-width) {
   .main-container__introduction {
-    padding: 100px 18px 89px 18px;
+    padding: 116px 18px 68px 18px;
   }
 }

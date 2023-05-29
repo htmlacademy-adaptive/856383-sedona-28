@@ -1,8 +1,9 @@
 .form-group__heading {
-  margin-bottom: 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  padding: 0 0 20px 0;
   color: $color-black;
   text-transform: uppercase;
   text-align: center;
@@ -29,6 +30,9 @@
 
 @media (min-width: $medium-width) {
   .form-group__heading {
-    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+    padding: 0 0 28px 0;
   }
 }

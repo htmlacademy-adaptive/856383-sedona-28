@@ -2,12 +2,12 @@
   @include reset-list;
   margin: 0 20px;
   display: grid;
-  background-color: $color-brown-300;
 }
 
 .photo__image {
   display: block;
   width: 100%;
+  background-color: $color-brown-300;
 }
 
 @media (max-width: $small-width-only) {
